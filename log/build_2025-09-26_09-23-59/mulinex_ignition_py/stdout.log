@@ -1,0 +1,26 @@
+running develop
+running egg_info
+writing mulinex_ignition_py.egg-info/PKG-INFO
+writing dependency_links to mulinex_ignition_py.egg-info/dependency_links.txt
+writing entry points to mulinex_ignition_py.egg-info/entry_points.txt
+writing requirements to mulinex_ignition_py.egg-info/requires.txt
+writing top-level names to mulinex_ignition_py.egg-info/top_level.txt
+reading manifest file 'mulinex_ignition_py.egg-info/SOURCES.txt'
+writing manifest file 'mulinex_ignition_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex-ignition-py.egg-link (link to .)
+Installing bridge_node script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup_omni_1 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing gostraighton script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_pd script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels_2 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing walking script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+
+Installed /home/ros/docker_simulation_ws/build/mulinex_ignition_py
+running symlink_data
+symbolically linking /home/ros/docker_simulation_ws/build/mulinex_ignition_py/resource/mulinex_ignition_py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/ament_index/resource_index/packages
+symbolically linking /home/ros/docker_simulation_ws/build/mulinex_ignition_py/package.xml -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py
+symbolically linking /home/ros/docker_simulation_ws/build/mulinex_ignition_py/launch/rosbag_rec.launch.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/launch
+symbolically linking /home/ros/docker_simulation_ws/build/mulinex_ignition_py/launch/controller_start_launch.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/launch

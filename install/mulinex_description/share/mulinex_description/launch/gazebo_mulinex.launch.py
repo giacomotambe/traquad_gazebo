@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/src/mulinex_description/launch/gazebo_mulinex.launch.py

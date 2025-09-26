@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib/libomni_mulinex_joystic.so

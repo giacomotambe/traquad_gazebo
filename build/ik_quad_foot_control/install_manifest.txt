@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/libik_quad_foot_control.so

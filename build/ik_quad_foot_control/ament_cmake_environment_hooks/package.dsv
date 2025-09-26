@@ -1,0 +1,4 @@
+source;share/ik_quad_foot_control/local_setup.bash
+source;share/ik_quad_foot_control/local_setup.dsv
+source;share/ik_quad_foot_control/local_setup.sh
+source;share/ik_quad_foot_control/local_setup.zsh

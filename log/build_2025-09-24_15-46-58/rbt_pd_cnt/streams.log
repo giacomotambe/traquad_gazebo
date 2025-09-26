@@ -1,0 +1,33 @@
+[0.339s] Invoking command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/rbt_pd_cnt -- -j12 -l12
+[1.144s] [35m[1mConsolidate compiler generated dependencies of target rbt_pd_cnt[0m
+[1.146s] [100%] Built target rbt_pd_cnt
+[1.219s] Invoked command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/rbt_pd_cnt -- -j12 -l12
+[1.222s] Invoking command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/rbt_pd_cnt
+[1.301s] -- Install configuration: ""
+[1.301s] -- Execute custom install script
+[1.302s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt//rbt_pd_cnt.xml
+[1.302s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/include/rbt_pd_cnt/real_pd_cnt.hpp
+[1.302s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/include/rbt_pd_cnt/robot_pd_cnt.hpp
+[1.306s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib/librbt_pd_cnt.so
+[1.308s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/library_path.sh
+[1.309s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/library_path.dsv
+[1.309s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/ament_index/resource_index/package_run_dependencies/rbt_pd_cnt
+[1.309s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/ament_index/resource_index/parent_prefix_path/rbt_pd_cnt
+[1.333s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/ament_prefix_path.sh
+[1.334s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/ament_prefix_path.dsv
+[1.334s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/path.sh
+[1.337s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/environment/path.dsv
+[1.340s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/local_setup.bash
+[1.342s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/local_setup.sh
+[1.343s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/local_setup.zsh
+[1.343s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/local_setup.dsv
+[1.344s] -- Symlinking: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.dsv
+[1.400s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/ament_index/resource_index/packages/rbt_pd_cnt
+[1.401s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/ament_index/resource_index/controller_interface__pluginlib__plugin/rbt_pd_cnt
+[1.402s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.402s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.404s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/cmake/ament_cmake_export_libraries-extras.cmake
+[1.405s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/cmake/rbt_pd_cntConfig.cmake
+[1.407s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/cmake/rbt_pd_cntConfig-version.cmake
+[1.409s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.xml
+[1.470s] Invoked command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/rbt_pd_cnt

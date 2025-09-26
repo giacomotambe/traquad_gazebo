@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/build/ik_quad_foot_control/ament_cmake_environment_hooks/local_setup.sh

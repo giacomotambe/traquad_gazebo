@@ -1,0 +1,80 @@
+[0.045s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[0.163s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.777s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.813s] -- Found mulinex_description: 0.0.0 (/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake)
+[0.815s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.921s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.931s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.950s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.003s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.060s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.206s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.216s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.826s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.285s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.356s] -- Found pi3hat_moteus_int_msgs: 0.0.0 (/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake)
+[2.425s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.451s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.860s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.960s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[3.262s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[3.428s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.707s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.708s] -- Configured cppcheck include dirs: 
+[3.710s] -- Configured cppcheck exclude dirs and/or files: 
+[3.712s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.715s] -- Added test 'lint_cmake' to check CMake code style
+[3.718s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.722s] -- Added test 'uncrustify' to check C / C++ code style
+[3.723s] -- Configured uncrustify additional arguments: 
+[3.724s] -- Added test 'xmllint' to check XML markup files
+[3.727s] -- Configuring done
+[3.843s] -- Generating done
+[3.887s] -- Build files have been written to: /home/ros/docker_simulation_ws/build/mulinex_ignition
+[4.017s] [35m[1mConsolidate compiler generated dependencies of target gt_odom_pub[0m
+[4.043s] [35m[1mConsolidate compiler generated dependencies of target move_wheels[0m
+[4.045s] [35m[1mConsolidate compiler generated dependencies of target getup_node[0m
+[4.165s] [ 16%] [32mBuilding CXX object CMakeFiles/gt_odom_pub.dir/src/gt_odom_pub.cpp.o[0m
+[4.165s] [ 33%] [32mBuilding CXX object CMakeFiles/move_wheels.dir/src/move_wheels.cpp.o[0m
+[4.186s] [ 50%] [32mBuilding CXX object CMakeFiles/getup_node.dir/src/getup.cpp.o[0m
+[34.072s] [ 66%] [32m[1mLinking CXX executable getup_node[0m
+[35.487s] [ 66%] Built target getup_node
+[37.781s] [ 83%] [32m[1mLinking CXX executable move_wheels[0m
+[40.015s] [ 83%] Built target move_wheels
+[55.742s] [100%] [32m[1mLinking CXX executable gt_odom_pub[0m
+[57.384s] [100%] Built target gt_odom_pub
+[57.428s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[57.434s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition
+[57.462s] -- Install configuration: ""
+[57.463s] -- Execute custom install script
+[57.465s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/gt_odom_pub
+[57.466s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/move_wheels
+[57.467s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/getup_node
+[57.469s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt.launch.py
+[57.469s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PD_wheels.launch.py
+[57.470s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PDonly.launch.py
+[57.471s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/test_lidar.launch.py
+[57.472s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/mulinex_mf.yaml
+[57.472s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/omnicar.yaml
+[57.473s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/empty.sdf
+[57.474s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/turtle_arena.sdf
+[57.475s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/hexagon.dae
+[57.476s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/wall.dae
+[57.476s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.config
+[57.477s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.sdf
+[57.478s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/package_run_dependencies/mulinex_ignition
+[57.478s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/parent_prefix_path/mulinex_ignition
+[57.479s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.sh
+[57.481s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.dsv
+[57.481s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.sh
+[57.482s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.dsv
+[57.483s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.bash
+[57.484s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.sh
+[57.485s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.zsh
+[57.485s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.dsv
+[57.486s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv
+[57.523s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/packages/mulinex_ignition
+[57.524s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig.cmake
+[57.525s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig-version.cmake
+[57.526s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.xml
+[57.534s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-bea617b6d7e8cdadaaa0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mulinex_ignition",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "getup_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getup_node-d9caa21bca4479106c2c.json",
+					"name" : "getup_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gt_odom_pub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gt_odom_pub-c3b8f1f10a44b94ec3f8.json",
+					"name" : "gt_odom_pub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_wheels::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_wheels-394df5071b0159f5a965.json",
+					"name" : "move_wheels",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mulinex_ignition_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mulinex_ignition_uninstall-bb1fde65c52acef7dbae.json",
+					"name" : "mulinex_ignition_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7b06cbac7a335c5d2304.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ros/docker_simulation_ws/build/mulinex_ignition",
+		"source" : "/home/ros/docker_simulation_ws/src/mulinex_ignition"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

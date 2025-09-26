@@ -1,0 +1,11 @@
+source;share/wheels_vel_cnt/hook/cmake_prefix_path.ps1
+source;share/wheels_vel_cnt/hook/cmake_prefix_path.dsv
+source;share/wheels_vel_cnt/hook/cmake_prefix_path.sh
+source;share/wheels_vel_cnt/hook/ld_library_path_lib.ps1
+source;share/wheels_vel_cnt/hook/ld_library_path_lib.dsv
+source;share/wheels_vel_cnt/hook/ld_library_path_lib.sh
+source;share/wheels_vel_cnt/local_setup.bash
+source;share/wheels_vel_cnt/local_setup.dsv
+source;share/wheels_vel_cnt/local_setup.ps1
+source;share/wheels_vel_cnt/local_setup.sh
+source;share/wheels_vel_cnt/local_setup.zsh

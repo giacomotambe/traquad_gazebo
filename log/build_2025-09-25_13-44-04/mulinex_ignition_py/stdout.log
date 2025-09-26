@@ -1,0 +1,65 @@
+running develop
+Removing /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex-ignition-py.egg-link (link to .)
+running egg_info
+writing ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/dependency_links.txt
+writing entry points to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/entry_points.txt
+writing requirements to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/requires.txt
+writing top-level names to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/top_level.txt
+reading manifest file '../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build
+creating /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib
+creating /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/walking.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/getup.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/stash.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/bridge_node.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/move_wheels_2.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/move_pd.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/getup_omni_1.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/move_wheels.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/gostraighton.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+copying mulinex_ignition_py/__init__.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+running install
+running install_lib
+creating /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/walking.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/getup.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/stash.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/bridge_node.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/move_wheels_2.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/move_pd.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/getup_omni_1.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/move_wheels.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/gostraighton.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/__init__.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/walking.py to walking.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/getup.py to getup.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/stash.py to stash.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/bridge_node.py to bridge_node.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/move_wheels_2.py to move_wheels_2.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/move_pd.py to move_pd.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/getup_omni_1.py to getup_omni_1.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/move_wheels.py to move_wheels.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/gostraighton.py to gostraighton.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/mulinex_ignition_py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py
+copying launch/rosbag_rec.launch.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/launch
+copying launch/controller_start_launch.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/launch
+running install_egg_info
+Copying ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bridge_node script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup_omni_1 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing gostraighton script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_pd script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels_2 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing walking script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+writing list of installed files to '/home/ros/docker_simulation_ws/build/mulinex_ignition_py/install.log'

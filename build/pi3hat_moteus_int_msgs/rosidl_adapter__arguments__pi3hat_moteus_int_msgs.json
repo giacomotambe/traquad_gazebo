@@ -1,0 +1,10 @@
+{
+  "package_name": "pi3hat_moteus_int_msgs",
+  "non_idl_tuples": [
+    "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs:msg/PacketPass.msg",
+    "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs:msg/JointsStates.msg",
+    "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs:msg/JointsCommand.msg",
+    "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs:msg/OmniMulinexCommand.msg",
+    "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs:msg/QuadFootState.msg"
+  ]
+}

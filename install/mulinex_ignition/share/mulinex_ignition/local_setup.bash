@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/build/mulinex_ignition/ament_cmake_environment_hooks/local_setup.bash

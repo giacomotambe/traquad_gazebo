@@ -1,0 +1,82 @@
+[0.080s] Invoking command in '/home/ros/docker_simulation_ws/build/omni_vel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/omni_vel_controller
+[0.279s] -- The C compiler identification is GNU 11.4.0
+[0.479s] -- The CXX compiler identification is GNU 11.4.0
+[0.501s] -- Detecting C compiler ABI info
+[0.723s] -- Detecting C compiler ABI info - done
+[0.756s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.757s] -- Detecting C compile features
+[0.758s] -- Detecting C compile features - done
+[0.768s] -- Detecting CXX compiler ABI info
+[1.077s] -- Detecting CXX compiler ABI info - done
+[1.105s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.106s] -- Detecting CXX compile features
+[1.108s] -- Detecting CXX compile features - done
+[1.121s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.721s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.944s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.088s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.314s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.344s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.385s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.452s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.545s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.760s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.774s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.113s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.212s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.375s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.425s] -- Looking for pthread.h
+[3.684s] -- Looking for pthread.h - found
+[3.685s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.927s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.933s] -- Found Threads: TRUE  
+[4.170s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.306s] -- Found hardware_interface: 2.52.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[5.005s] -- Found controller_interface: 2.52.0 (/opt/ros/humble/share/controller_interface/cmake)
+[5.020s] -- Found pi3hat_moteus_int_msgs: 0.0.0 (/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake)
+[5.101s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[5.157s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.467s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.468s] -- Configured cppcheck include dirs: /home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller/include;$<BUILD_INTERFACE:/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller/include>
+[5.468s] -- Configured cppcheck exclude dirs and/or files: 
+[5.472s] -- Added test 'lint_cmake' to check CMake code style
+[5.483s] -- Added test 'uncrustify' to check C / C++ code style
+[5.483s] -- Configured uncrustify additional arguments: 
+[5.485s] -- Added test 'xmllint' to check XML markup files
+[5.503s] -- Configuring done
+[5.569s] -- Generating done
+[5.590s] -- Build files have been written to: /home/ros/docker_simulation_ws/build/omni_vel_controller
+[5.623s] Invoked command in '/home/ros/docker_simulation_ws/build/omni_vel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/omni_vel_controller
+[5.630s] Invoking command in '/home/ros/docker_simulation_ws/build/omni_vel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_vel_controller -- -j12 -l12
+[5.811s] [ 50%] [32mBuilding CXX object CMakeFiles/omni_vel_controller.dir/src/omni_vel_controller.cpp.o[0m
+[52.540s] [100%] [32m[1mLinking CXX shared library libomni_vel_controller.so[0m
+[54.006s] [100%] Built target omni_vel_controller
+[54.110s] Invoked command in '/home/ros/docker_simulation_ws/build/omni_vel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_vel_controller -- -j12 -l12
+[54.131s] Invoking command in '/home/ros/docker_simulation_ws/build/omni_vel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_vel_controller
+[54.151s] -- Install configuration: ""
+[54.152s] -- Execute custom install script
+[54.155s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller//omni_vel_controller.xml
+[54.188s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/library_path.sh
+[54.214s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/library_path.dsv
+[54.239s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/ament_index/resource_index/package_run_dependencies/omni_vel_controller
+[54.263s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/ament_index/resource_index/parent_prefix_path/omni_vel_controller
+[54.283s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/ament_prefix_path.sh
+[54.301s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/ament_prefix_path.dsv
+[54.326s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/path.sh
+[54.351s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/environment/path.dsv
+[54.371s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/local_setup.bash
+[54.392s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/local_setup.sh
+[54.413s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/local_setup.zsh
+[54.437s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/local_setup.dsv
+[54.464s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.dsv
+[54.495s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/ament_index/resource_index/packages/omni_vel_controller
+[54.530s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/omni_vel_controller
+[54.555s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[54.579s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[54.601s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[54.626s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/cmake/omni_vel_controllerConfig.cmake
+[54.653s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/cmake/omni_vel_controllerConfig-version.cmake
+[54.675s] -- Symlinking: /home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.xml
+[54.702s] -- Installing: /home/ros/docker_simulation_ws/install/omni_vel_controller/lib/libomni_vel_controller.so
+[54.817s] -- Set runtime path of "/home/ros/docker_simulation_ws/install/omni_vel_controller/lib/libomni_vel_controller.so" to ""
+[54.824s] Invoked command in '/home/ros/docker_simulation_ws/build/omni_vel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_vel_controller

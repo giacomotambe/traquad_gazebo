@@ -1,0 +1,10 @@
+msg/JointsCommand.idl
+msg/JointsCommand.msg
+msg/JointsStates.idl
+msg/JointsStates.msg
+msg/OmniMulinexCommand.idl
+msg/OmniMulinexCommand.msg
+msg/PacketPass.idl
+msg/PacketPass.msg
+msg/QuadFootState.idl
+msg/QuadFootState.msg

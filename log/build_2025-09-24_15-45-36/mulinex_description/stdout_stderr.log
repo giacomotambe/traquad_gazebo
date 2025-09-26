@@ -1,0 +1,103 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ros/docker_simulation_ws/build/mulinex_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/base_inertia.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/camera_sensor.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/hip_module.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/imu_sensor.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/leg.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/lidar_sensor.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/links.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/material.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mul_hw_ign.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mul_ignition.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mulinex.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omni_car_module.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar_gazebo.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar_ignition.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/wheel.xacro
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/launch/display_mulinex.launch.py
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/launch/gazebo_mulinex.launch.py
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Body.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Lower_leg_left.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Lower_leg_right.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_2_left.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_2_right.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_left_front.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_left_hind.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_right_front.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_right_hind.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_LF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_LH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_RF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_RH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_LF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_LH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_RF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_RH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_LF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_LH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_RF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_RH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_lf.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_lh.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_rf.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_rh.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Body.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Lower_leg_left.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Lower_leg_right.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_2_left.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_2_right.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_left_front.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_left_hind.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_right_front.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_right_hind.stl
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_LF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_LH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_RF.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_RH.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/roller_1.STL
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/simplify_meshes.py
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/rviz/config.rviz
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/empty.world
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/gap.world
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/obs_down.world
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/obs_up.world
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/package_run_dependencies/mulinex_description
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/parent_prefix_path/mulinex_description
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/path.sh
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/path.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.bash
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.sh
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.zsh
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/packages/mulinex_description
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake/mulinex_descriptionConfig.cmake
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake/mulinex_descriptionConfig-version.cmake
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.xml

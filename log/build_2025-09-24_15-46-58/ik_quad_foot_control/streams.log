@@ -1,0 +1,35 @@
+[0.307s] Invoking command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/ik_quad_foot_control -- -j12 -l12
+[1.233s] [35m[1mConsolidate compiler generated dependencies of target ik_quad_foot_control[0m
+[1.237s] [35m[1mConsolidate compiler generated dependencies of target base_motion[0m
+[1.237s] [ 50%] Built target base_motion
+[1.238s] [100%] Built target ik_quad_foot_control
+[1.354s] Invoked command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/ik_quad_foot_control -- -j12 -l12
+[1.399s] Invoking command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/ik_quad_foot_control
+[1.482s] -- Install configuration: ""
+[1.484s] -- Execute custom install script
+[1.485s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control//ik_quad_foot_control.xml
+[1.486s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/library_path.sh
+[1.487s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/library_path.dsv
+[1.488s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/ik_quad_foot_control/base_motion
+[1.489s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/launch/base_motion.launch.py
+[1.489s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ament_index/resource_index/package_run_dependencies/ik_quad_foot_control
+[1.491s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ament_index/resource_index/parent_prefix_path/ik_quad_foot_control
+[1.492s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/ament_prefix_path.sh
+[1.493s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/ament_prefix_path.dsv
+[1.493s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/path.sh
+[1.493s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/environment/path.dsv
+[1.494s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/local_setup.bash
+[1.495s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/local_setup.sh
+[1.495s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/local_setup.zsh
+[1.495s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/local_setup.dsv
+[1.496s] -- Symlinking: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.dsv
+[1.507s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ament_index/resource_index/packages/ik_quad_foot_control
+[1.507s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ament_index/resource_index/controller_interface__pluginlib__plugin/ik_quad_foot_control
+[1.508s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.508s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.509s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/cmake/ament_cmake_export_libraries-extras.cmake
+[1.509s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/cmake/ik_quad_foot_controlConfig.cmake
+[1.510s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/cmake/ik_quad_foot_controlConfig-version.cmake
+[1.511s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.xml
+[1.512s] -- Up-to-date: /home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/libik_quad_foot_control.so
+[1.688s] Invoked command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/ik_quad_foot_control

@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/ros/docker_simulation_ws/src/custom_interfaces:msg/WheelVelocityCommand.msg"
+  ]
+}

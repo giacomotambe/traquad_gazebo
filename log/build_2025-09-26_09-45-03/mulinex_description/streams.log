@@ -1,0 +1,102 @@
+[0.095s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/mulinex_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/mulinex_description
+[0.131s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.538s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.560s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.805s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.808s] -- Added test 'lint_cmake' to check CMake code style
+[0.810s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.817s] -- Added test 'xmllint' to check XML markup files
+[0.820s] -- Configuring done
+[0.831s] -- Generating done
+[0.846s] -- Build files have been written to: /home/ros/docker_simulation_ws/build/mulinex_description
+[0.976s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/mulinex_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/mulinex_description
+[0.987s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_description -- -j12 -l12
+[1.133s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_description -- -j12 -l12
+[1.163s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_description
+[1.190s] -- Install configuration: ""
+[1.191s] -- Execute custom install script
+[1.193s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/base_inertia.xacro
+[1.194s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/camera_sensor.xacro
+[1.195s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/hip_module.xacro
+[1.195s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/imu_sensor.xacro
+[1.196s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/leg.xacro
+[1.197s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/lidar_sensor.xacro
+[1.197s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/links.xacro
+[1.198s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/material.xacro
+[1.198s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mul_hw_ign.xacro
+[1.199s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mul_ignition.xacro
+[1.200s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/mulinex.xacro
+[1.201s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omni_car_module.xacro
+[1.201s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar.xacro
+[1.202s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar_gazebo.xacro
+[1.203s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/omnicar_ignition.xacro
+[1.204s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/track.xacro
+[1.205s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/traquad.xacro
+[1.206s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/traquad_hw_ign.xacro
+[1.207s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/urdf/wheel.xacro
+[1.207s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/launch/display_mulinex.launch.py
+[1.208s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/launch/gazebo_mulinex.launch.py
+[1.210s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Body.stl
+[1.210s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Lower_leg_left.stl
+[1.211s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Lower_leg_right.stl
+[1.212s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_2_left.stl
+[1.213s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_2_right.stl
+[1.213s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_left_front.stl
+[1.214s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_left_hind.stl
+[1.215s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_right_front.stl
+[1.215s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/Module_right_hind.stl
+[1.216s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/body_left.stl
+[1.216s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/body_right.stl
+[1.217s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_LF.STL
+[1.217s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_LH.STL
+[1.217s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_RF.STL
+[1.218s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_foot_RH.STL
+[1.218s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_LF.STL
+[1.219s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_LH.STL
+[1.219s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_RF.STL
+[1.220s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_lower_leg_RH.STL
+[1.221s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_LF.STL
+[1.221s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_LH.STL
+[1.222s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_RF.STL
+[1.222s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/goat_upper_foot_RH.STL
+[1.223s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_lf.STL
+[1.224s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_lh.STL
+[1.225s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_rf.STL
+[1.225s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/mecanum_wheel_rh.STL
+[1.226s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Body.stl
+[1.227s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Lower_leg_left.stl
+[1.227s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Lower_leg_right.stl
+[1.228s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_2_left.stl
+[1.229s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_2_right.stl
+[1.229s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_left_front.stl
+[1.230s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_left_hind.stl
+[1.230s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_right_front.stl
+[1.231s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/old_Module_right_hind.stl
+[1.231s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_LF.STL
+[1.232s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_LH.STL
+[1.233s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_RF.STL
+[1.233s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/omni_lower_leg_RH.STL
+[1.234s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/roller_1.STL
+[1.234s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/simplify_meshes.py
+[1.235s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/meshes/wheel.stl
+[1.235s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/rviz/config.rviz
+[1.236s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/empty.world
+[1.237s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/gap.world
+[1.238s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/obs_down.world
+[1.239s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/world/obs_up.world
+[1.240s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/package_run_dependencies/mulinex_description
+[1.241s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/parent_prefix_path/mulinex_description
+[1.242s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/ament_prefix_path.sh
+[1.243s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/ament_prefix_path.dsv
+[1.243s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/path.sh
+[1.244s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/environment/path.dsv
+[1.246s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.bash
+[1.246s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.sh
+[1.247s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.zsh
+[1.247s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/local_setup.dsv
+[1.247s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.dsv
+[1.286s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/ament_index/resource_index/packages/mulinex_description
+[1.287s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake/mulinex_descriptionConfig.cmake
+[1.289s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake/mulinex_descriptionConfig-version.cmake
+[1.289s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.xml
+[1.295s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_description
