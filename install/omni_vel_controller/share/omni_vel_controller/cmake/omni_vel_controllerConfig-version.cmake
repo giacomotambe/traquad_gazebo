@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/build/omni_vel_controller/ament_cmake_core/omni_vel_controllerConfig-version.cmake

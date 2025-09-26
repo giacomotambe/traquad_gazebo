@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic/launch/start_joy_sim.launch.py

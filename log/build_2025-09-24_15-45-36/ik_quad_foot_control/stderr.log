@@ -1,0 +1,45 @@
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:[m[K In member function ‘[01m[Kvoid ik_quad_foot_control::IK_Quad_Foot_Controller::FK_comp(double, double, double&, double&, ik_quad_foot_control::LEG_IND)[m[K’:
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:75:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   75 |     void IK_Quad_Foot_Controller::FK_comp(double q1, double q2, double &y, double &x,[01;35m[KLEG_IND leg[m[K)
+      |                                                                                      [01;35m[K~~~~~~~~^~~[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:[m[K In lambda function:
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:202:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  202 |         [this]([01;35m[Krclcpp::QOSDeadlineRequestedInfo & event[m[K)
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:5[m[K:
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type ik_quad_foot_control::IK_Quad_Foot_Controller::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:375:58:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+  375 |                     RCLCPP_INFO(get_node()->get_logger(),[01;35m[K"the computed %d IK for pushup are [%f,%f]"[m[K,pushup_jnt_pos[2*i],pushup_jnt_pos[2*i + 1]);
+      |                                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:375:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  375 |                     RCLCPP_INFO(get_node()->get_logger(),"the computed [01;36m[K%d[m[K IK for pushup are [%f,%f]",pushup_jnt_pos[2*i],pushup_jnt_pos[2*i + 1]);
+      |                                                                        [01;36m[K~^[m[K
+      |                                                                         [01;36m[K|[m[K
+      |                                                                         [01;36m[Kint[m[K
+      |                                                                        [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:5[m[K:
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:375:58:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  375 |                     RCLCPP_INFO(get_node()->get_logger(),[01;35m[K"the computed %d IK for pushup are [%f,%f]"[m[K,pushup_jnt_pos[2*i],pushup_jnt_pos[2*i + 1]);
+      |                                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:375:98:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  375 |                     RCLCPP_INFO(get_node()->get_logger(),"the computed %d IK for pushup are [%f,[01;36m[K%f[m[K]",pushup_jnt_pos[2*i],pushup_jnt_pos[2*i + 1]);
+      |                                                                                                 [01;36m[K~^[m[K
+      |                                                                                                  [01;36m[K|[m[K
+      |                                                                                                  [01;36m[Kdouble[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:297:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  297 |         double [01;35m[Kq1[m[K=0,q2=0,t,k;
+      |                [01;35m[K^~[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:297:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  297 |         double q1=0,[01;35m[Kq2[m[K=0,t,k;
+      |                     [01;35m[K^~[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:297:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  297 |         double q1=0,q2=0,[01;35m[Kt[m[K,k;
+      |                          [01;35m[K^[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:297:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kk[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  297 |         double q1=0,q2=0,t,[01;35m[Kk[m[K;
+      |                            [01;35m[K^[m[K
+[01m[K/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control/src/ik_quad_foot_control.cpp:292:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  292 |     controller_interface::return_type IK_Quad_Foot_Controller::update([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+      |                                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

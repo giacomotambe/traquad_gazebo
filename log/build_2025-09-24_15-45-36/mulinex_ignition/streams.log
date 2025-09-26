@@ -1,0 +1,99 @@
+[0.046s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/mulinex_ignition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/mulinex_ignition
+[0.239s] -- The C compiler identification is GNU 11.4.0
+[0.431s] -- The CXX compiler identification is GNU 11.4.0
+[0.468s] -- Detecting C compiler ABI info
+[0.703s] -- Detecting C compiler ABI info - done
+[0.725s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.726s] -- Detecting C compile features
+[0.727s] -- Detecting C compile features - done
+[0.734s] -- Detecting CXX compiler ABI info
+[1.015s] -- Detecting CXX compiler ABI info - done
+[1.053s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.053s] -- Detecting CXX compile features
+[1.055s] -- Detecting CXX compile features - done
+[1.074s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.596s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.826s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.978s] -- Found mulinex_description: 0.0.0 (/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/cmake)
+[1.988s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.204s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.238s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.284s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.442s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.741s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.764s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.305s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.451s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.670s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.717s] -- Looking for pthread.h
+[3.988s] -- Looking for pthread.h - found
+[3.988s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.247s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.255s] -- Found Threads: TRUE  
+[4.459s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.509s] -- Found pi3hat_moteus_int_msgs: 0.0.0 (/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake)
+[4.582s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[4.626s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.021s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[5.079s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[5.286s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[5.337s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.598s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.599s] -- Configured cppcheck include dirs: 
+[5.599s] -- Configured cppcheck exclude dirs and/or files: 
+[5.602s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.606s] -- Added test 'lint_cmake' to check CMake code style
+[5.609s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.616s] -- Added test 'uncrustify' to check C / C++ code style
+[5.619s] -- Configured uncrustify additional arguments: 
+[5.621s] -- Added test 'xmllint' to check XML markup files
+[5.627s] -- Configuring done
+[5.736s] -- Generating done
+[5.773s] -- Build files have been written to: /home/ros/docker_simulation_ws/build/mulinex_ignition
+[5.812s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake /home/ros/docker_simulation_ws/src/mulinex_ignition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/mulinex_ignition
+[5.820s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[6.005s] [ 16%] [32mBuilding CXX object CMakeFiles/getup_node.dir/src/getup.cpp.o[0m
+[6.008s] [ 33%] [32mBuilding CXX object CMakeFiles/gt_odom_pub.dir/src/gt_odom_pub.cpp.o[0m
+[6.011s] [ 50%] [32mBuilding CXX object CMakeFiles/move_wheels.dir/src/move_wheels.cpp.o[0m
+[29.923s] [ 83%] [32m[1mLinking CXX executable getup_node[0m
+[29.927s] [ 83%] [32m[1mLinking CXX executable move_wheels[0m
+[33.278s] [ 83%] Built target getup_node
+[33.365s] [ 83%] Built target move_wheels
+[47.043s] [100%] [32m[1mLinking CXX executable gt_odom_pub[0m
+[48.875s] [100%] Built target gt_odom_pub
+[49.074s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[49.247s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition
+[49.264s] -- Install configuration: ""
+[49.265s] -- Execute custom install script
+[49.268s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/gt_odom_pub
+[49.288s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/move_wheels
+[49.457s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/getup_node
+[49.533s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt.launch.py
+[49.563s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PD_wheels.launch.py
+[49.593s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PDonly.launch.py
+[49.625s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/test_lidar.launch.py
+[49.667s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/mulinex_mf.yaml
+[49.693s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/omnicar.yaml
+[49.720s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/empty.sdf
+[49.744s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/turtle_arena.sdf
+[49.775s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/hexagon.dae
+[49.791s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/wall.dae
+[49.810s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.config
+[49.828s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.sdf
+[49.857s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/package_run_dependencies/mulinex_ignition
+[49.880s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/parent_prefix_path/mulinex_ignition
+[49.900s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.sh
+[49.925s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.dsv
+[49.943s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.sh
+[49.962s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.dsv
+[49.978s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.bash
+[50.002s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.sh
+[50.030s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.zsh
+[50.058s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.dsv
+[50.084s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv
+[50.100s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/packages/mulinex_ignition
+[50.116s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig.cmake
+[50.139s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig-version.cmake
+[50.177s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.xml
+[50.205s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition

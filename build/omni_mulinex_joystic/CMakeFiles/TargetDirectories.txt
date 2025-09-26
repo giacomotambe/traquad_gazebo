@@ -1,0 +1,11 @@
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/uninstall.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/omni_mulinex_joystic_uninstall.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/omni_mulinex_joystic.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/omni_mul_joystic_node.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/test.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/edit_cache.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/rebuild_cache.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/list_install_components.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/install.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/install/local.dir
+/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/CMakeFiles/install/strip.dir

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/entry_points.txt
+writing requirements to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/requires.txt
+writing top-level names to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/top_level.txt
+reading manifest file '../../build/rlg_quad_controller/rlg_quad_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/rlg_quad_controller/rlg_quad_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rlg_quad_controller/rlg_quad_controller.egg-info to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing force_measure script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_robot script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_sim script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing trajectory_publisher script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+writing list of installed files to '/home/ros/docker_simulation_ws/build/rlg_quad_controller/install.log'

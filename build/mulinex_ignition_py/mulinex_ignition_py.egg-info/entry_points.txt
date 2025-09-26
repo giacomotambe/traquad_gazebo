@@ -1,0 +1,10 @@
+[console_scripts]
+bridge_node = mulinex_ignition_py.bridge_node:main
+getup = mulinex_ignition_py.getup:main
+getup_omni_1 = mulinex_ignition_py.getup_omni_1:main
+gostraighton = mulinex_ignition_py.gostraighton:main
+move_pd = mulinex_ignition_py.move_pd:main
+move_wheels = mulinex_ignition_py.move_wheels:main
+move_wheels_2 = mulinex_ignition_py.move_wheels_2:main
+walking = mulinex_ignition_py.walking:main
+

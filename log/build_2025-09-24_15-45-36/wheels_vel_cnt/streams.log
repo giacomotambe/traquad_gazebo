@@ -1,0 +1,83 @@
+[0.074s] Invoking command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/docker_simulation_ws/src/wheels_vel_cnt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/wheels_vel_cnt
+[0.301s] -- The C compiler identification is GNU 11.4.0
+[0.586s] -- The CXX compiler identification is GNU 11.4.0
+[0.610s] -- Detecting C compiler ABI info
+[0.901s] -- Detecting C compiler ABI info - done
+[0.938s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.938s] -- Detecting C compile features
+[0.940s] -- Detecting C compile features - done
+[0.949s] -- Detecting CXX compiler ABI info
+[1.388s] -- Detecting CXX compiler ABI info - done
+[1.421s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.422s] -- Detecting CXX compile features
+[1.423s] -- Detecting CXX compile features - done
+[1.441s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.114s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.469s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.760s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.960s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.986s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.028s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.081s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.370s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.384s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.747s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.879s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.061s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.112s] -- Looking for pthread.h
+[4.744s] -- Looking for pthread.h - found
+[4.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.133s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.141s] -- Found Threads: TRUE  
+[5.426s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[5.550s] -- Found hardware_interface: 2.52.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[6.436s] -- Found controller_interface: 2.52.0 (/opt/ros/humble/share/controller_interface/cmake)
+[6.443s] -- Found pi3hat_moteus_int_msgs: 0.0.0 (/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake)
+[6.523s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[6.564s] -- Found custom_interfaces: 0.0.0 (/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[6.645s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.395s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.396s] -- Configured cppcheck include dirs: /home/ros/docker_simulation_ws/src/wheels_vel_cnt/include;$<BUILD_INTERFACE:/home/ros/docker_simulation_ws/src/wheels_vel_cnt/include>
+[7.396s] -- Configured cppcheck exclude dirs and/or files: 
+[7.401s] -- Added test 'lint_cmake' to check CMake code style
+[7.409s] -- Added test 'uncrustify' to check C / C++ code style
+[7.410s] -- Configured uncrustify additional arguments: 
+[7.415s] -- Added test 'xmllint' to check XML markup files
+[7.463s] -- Configuring done
+[7.574s] -- Generating done
+[7.607s] -- Build files have been written to: /home/ros/docker_simulation_ws/build/wheels_vel_cnt
+[7.673s] Invoked command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/docker_simulation_ws/src/wheels_vel_cnt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/wheels_vel_cnt
+[7.675s] Invoking command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/wheels_vel_cnt -- -j12 -l12
+[7.906s] [ 50%] [32mBuilding CXX object CMakeFiles/wheels_vel_cnt.dir/src/wheels_vel_cnt.cpp.o[0m
+[48.679s] [100%] [32m[1mLinking CXX shared library libwheels_vel_cnt.so[0m
+[49.583s] [100%] Built target wheels_vel_cnt
+[49.890s] Invoked command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/wheels_vel_cnt -- -j12 -l12
+[49.895s] Invoking command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/wheels_vel_cnt
+[49.905s] -- Install configuration: ""
+[49.906s] -- Execute custom install script
+[49.908s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt//wheels_vel_cnt.xml
+[50.071s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/library_path.sh
+[50.099s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/library_path.dsv
+[50.321s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/package_run_dependencies/wheels_vel_cnt
+[50.347s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/parent_prefix_path/wheels_vel_cnt
+[50.361s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/ament_prefix_path.sh
+[50.375s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/ament_prefix_path.dsv
+[50.394s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/path.sh
+[50.409s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/path.dsv
+[50.430s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.bash
+[50.443s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.sh
+[50.456s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.zsh
+[50.469s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.dsv
+[50.481s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.dsv
+[50.494s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/packages/wheels_vel_cnt
+[50.507s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/controller_interface__pluginlib__plugin/wheels_vel_cnt
+[50.522s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_dependencies-extras.cmake
+[50.536s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_include_directories-extras.cmake
+[50.549s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_libraries-extras.cmake
+[50.560s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/wheels_vel_cntConfig.cmake
+[50.575s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/wheels_vel_cntConfig-version.cmake
+[50.805s] -- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.xml
+[50.811s] -- Installing: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/libwheels_vel_cnt.so
+[51.276s] -- Set runtime path of "/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/libwheels_vel_cnt.so" to ""
+[51.282s] Invoked command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt' returned '0': AMENT_PREFIX_PATH=/home/ros/docker_simulation_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/wheels_vel_cnt

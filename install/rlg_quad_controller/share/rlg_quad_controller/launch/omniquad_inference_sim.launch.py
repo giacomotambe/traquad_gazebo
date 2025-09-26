@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_sim.launch.py

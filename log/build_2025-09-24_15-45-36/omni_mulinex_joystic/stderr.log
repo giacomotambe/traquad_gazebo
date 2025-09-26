@@ -1,0 +1,4 @@
+[01m[K/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic/src/omnimul_joy.cpp:[m[K In lambda function:
+[01m[K/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic/src/omnimul_joy.cpp:89:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |         [this]([01;35m[Krclcpp::QOSDeadlineOfferedInfo & event[m[K)
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/omni_mul_joystic_node" "TARGETS" "omni_mul_joystic_node" "DESTINATION" "lib/omni_mulinex_joystic")

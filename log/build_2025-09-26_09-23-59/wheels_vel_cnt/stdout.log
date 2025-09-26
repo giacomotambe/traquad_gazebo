@@ -1,0 +1,58 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found hardware_interface: 2.52.0 (/opt/ros/humble/share/hardware_interface/cmake)
+-- Found controller_interface: 2.52.0 (/opt/ros/humble/share/controller_interface/cmake)
+-- Found pi3hat_moteus_int_msgs: 0.0.0 (/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found custom_interfaces: 0.0.0 (/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/ros/docker_simulation_ws/src/wheels_vel_cnt/include;$<BUILD_INTERFACE:/home/ros/docker_simulation_ws/src/wheels_vel_cnt/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ros/docker_simulation_ws/build/wheels_vel_cnt
+[35m[1mConsolidate compiler generated dependencies of target wheels_vel_cnt[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/wheels_vel_cnt.dir/src/wheels_vel_cnt.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libwheels_vel_cnt.so[0m
+[100%] Built target wheels_vel_cnt
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt//wheels_vel_cnt.xml
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/library_path.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/library_path.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/package_run_dependencies/wheels_vel_cnt
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/parent_prefix_path/wheels_vel_cnt
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/path.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/environment/path.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.bash
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.zsh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/local_setup.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/packages/wheels_vel_cnt
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/ament_index/resource_index/controller_interface__pluginlib__plugin/wheels_vel_cnt
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/wheels_vel_cntConfig.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/cmake/wheels_vel_cntConfig-version.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.xml
+-- Installing: /home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/libwheels_vel_cnt.so
+-- Set runtime path of "/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/libwheels_vel_cnt.so" to ""

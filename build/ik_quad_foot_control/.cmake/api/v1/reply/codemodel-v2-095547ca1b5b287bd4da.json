@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-93b6f7e429cc3674dabe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ik_quad_foot_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "base_motion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-base_motion-b53f1e3e4919f854b633.json",
+					"name" : "base_motion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ik_quad_foot_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ik_quad_foot_control-af4587bb209a64893fc0.json",
+					"name" : "ik_quad_foot_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ik_quad_foot_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ik_quad_foot_control_uninstall-92705f2ab77a5f8a88bc.json",
+					"name" : "ik_quad_foot_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ddafcb081c3e7799e61e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ros/docker_simulation_ws/build/ik_quad_foot_control",
+		"source" : "/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

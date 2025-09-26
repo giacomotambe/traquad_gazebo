@@ -1,0 +1,4 @@
+source;share/wheels_vel_cnt/local_setup.bash
+source;share/wheels_vel_cnt/local_setup.dsv
+source;share/wheels_vel_cnt/local_setup.sh
+source;share/wheels_vel_cnt/local_setup.zsh

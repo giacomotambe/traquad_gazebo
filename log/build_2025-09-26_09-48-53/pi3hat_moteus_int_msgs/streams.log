@@ -1,0 +1,188 @@
+[0.098s] Invoking command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs -- -j12 -l12
+[0.401s] [  1%] Built target pi3hat_moteus_int_msgs__cpp
+[0.451s] [ 12%] Built target pi3hat_moteus_int_msgs__rosidl_generator_c
+[0.541s] [ 12%] Built target ament_cmake_python_symlink_pi3hat_moteus_int_msgs
+[0.665s] [ 23%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_cpp
+[0.753s] [ 34%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c
+[0.754s] [ 46%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp
+[0.758s] [ 63%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_c
+[0.759s] [ 68%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp
+[0.767s] [ 79%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c
+[0.857s] [ 79%] Built target pi3hat_moteus_int_msgs
+[0.954s] [ 80%] Built target pi3hat_moteus_int_msgs__py
+[1.102s] [ 90%] Built target pi3hat_moteus_int_msgs__rosidl_generator_py
+[1.230s] [ 93%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.233s] [ 96%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_c__pyext
+[1.252s] [100%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c__pyext
+[1.799s] running egg_info
+[1.804s] writing pi3hat_moteus_int_msgs.egg-info/PKG-INFO
+[1.806s] writing dependency_links to pi3hat_moteus_int_msgs.egg-info/dependency_links.txt
+[1.807s] writing top-level names to pi3hat_moteus_int_msgs.egg-info/top_level.txt
+[1.818s] reading manifest file 'pi3hat_moteus_int_msgs.egg-info/SOURCES.txt'
+[1.820s] writing manifest file 'pi3hat_moteus_int_msgs.egg-info/SOURCES.txt'
+[1.949s] [100%] Built target ament_cmake_python_build_pi3hat_moteus_int_msgs_egg
+[1.993s] Invoked command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs -- -j12 -l12
+[1.999s] Invoking command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs
+[2.041s] -- Install configuration: ""
+[2.044s] -- Execute custom install script
+[2.045s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/rosidl_interfaces/pi3hat_moteus_int_msgs
+[2.048s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__functions.h
+[2.054s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__struct.h
+[2.054s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.h
+[2.055s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__functions.h
+[2.055s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__struct.h
+[2.056s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.h
+[2.057s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__functions.h
+[2.058s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__struct.h
+[2.060s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.h
+[2.067s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__functions.h
+[2.078s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__struct.h
+[2.079s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.h
+[2.079s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__functions.h
+[2.081s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__struct.h
+[2.081s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.h
+[2.081s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_command.h
+[2.084s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_states.h
+[2.085s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/omni_mulinex_command.h
+[2.085s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/packet_pass.h
+[2.086s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/quad_foot_state.h
+[2.090s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.091s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/library_path.sh
+[2.091s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/library_path.dsv
+[2.092s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_fastrtps_c.h
+[2.092s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_fastrtps_c.h
+[2.096s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_fastrtps_c.h
+[2.097s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_fastrtps_c.h
+[2.098s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_fastrtps_c.h
+[2.099s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.099s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__builder.hpp
+[2.099s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__struct.hpp
+[2.100s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__traits.hpp
+[2.100s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.hpp
+[2.102s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__builder.hpp
+[2.105s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__struct.hpp
+[2.106s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__traits.hpp
+[2.107s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.hpp
+[2.108s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__builder.hpp
+[2.112s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__struct.hpp
+[2.112s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__traits.hpp
+[2.113s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.hpp
+[2.113s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__builder.hpp
+[2.114s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__struct.hpp
+[2.114s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__traits.hpp
+[2.115s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.hpp
+[2.115s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__builder.hpp
+[2.115s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__struct.hpp
+[2.116s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__traits.hpp
+[2.116s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.hpp
+[2.116s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_command.hpp
+[2.117s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_states.hpp
+[2.118s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/omni_mulinex_command.hpp
+[2.119s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/packet_pass.hpp
+[2.121s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/quad_foot_state.hpp
+[2.122s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.123s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.125s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_fastrtps_cpp.hpp
+[2.125s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.126s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_fastrtps_cpp.hpp
+[2.127s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[2.128s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.129s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_introspection_c.h
+[2.130s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_introspection_c.h
+[2.132s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_introspection_c.h
+[2.136s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_introspection_c.h
+[2.137s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_introspection_c.h
+[2.138s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.138s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_introspection_cpp.hpp
+[2.138s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_introspection_cpp.hpp
+[2.139s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_introspection_cpp.hpp
+[2.139s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_introspection_cpp.hpp
+[2.140s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_introspection_cpp.hpp
+[2.140s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/pythonpath.sh
+[2.141s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/pythonpath.dsv
+[2.142s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.149s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.156s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.157s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.163s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/__init__.py
+[2.163s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_c.c
+[2.164s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.165s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.166s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/libpi3hat_moteus_int_msgs__rosidl_generator_py.so
+[2.168s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/__init__.py
+[2.169s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_command.py
+[2.175s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_command_s.c
+[2.176s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_states.py
+[2.176s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_states_s.c
+[2.177s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command.py
+[2.178s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command_s.c
+[2.180s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_packet_pass.py
+[2.182s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_packet_pass_s.c
+[2.183s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_quad_foot_state.py
+[2.184s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_quad_foot_state_s.c
+[2.184s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.185s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.185s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.185s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.185s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.186s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.186s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/PacketPass.idl
+[2.187s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsStates.idl
+[2.188s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsCommand.idl
+[2.189s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/OmniMulinexCommand.idl
+[2.189s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/QuadFootState.idl
+[2.189s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/PacketPass.msg
+[2.190s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsStates.msg
+[2.190s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsCommand.msg
+[2.191s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/OmniMulinexCommand.msg
+[2.191s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/QuadFootState.msg
+[2.192s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/package_run_dependencies/pi3hat_moteus_int_msgs
+[2.192s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/parent_prefix_path/pi3hat_moteus_int_msgs
+[2.192s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/ament_prefix_path.sh
+[2.193s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/ament_prefix_path.dsv
+[2.193s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/path.sh
+[2.193s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/path.dsv
+[2.194s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.bash
+[2.194s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.sh
+[2.194s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.zsh
+[2.195s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.dsv
+[2.195s] -- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.dsv
+[2.230s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/packages/pi3hat_moteus_int_msgs
+[2.231s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake-extras.cmake
+[2.232s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.233s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.233s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.233s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.234s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.235s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.235s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgsConfig.cmake
+[2.236s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgsConfig-version.cmake
+[2.237s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.xml
+[2.239s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_c.so
+[2.240s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.so
+[2.241s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.243s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.so
+[2.249s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_c.so
+[2.249s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.so
+[2.250s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_cpp.so
+[2.396s] Listing '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs'...
+[2.397s] Listing '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg'...
+[2.412s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_py.so
+[2.413s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cExport.cmake
+[2.414s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.415s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.415s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.416s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cppExport.cmake
+[2.416s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.418s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.418s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.419s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.419s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cExport.cmake
+[2.420s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.421s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.422s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.423s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cppExport.cmake
+[2.425s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.428s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_pyExport.cmake
+[2.429s] -- Up-to-date: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.512s] Invoked command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs

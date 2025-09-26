@@ -1,0 +1,1 @@
+/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs/rosidl_generator_cpp/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__struct.hpp

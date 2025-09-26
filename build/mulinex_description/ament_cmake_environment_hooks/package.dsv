@@ -1,0 +1,4 @@
+source;share/mulinex_description/local_setup.bash
+source;share/mulinex_description/local_setup.dsv
+source;share/mulinex_description/local_setup.sh
+source;share/mulinex_description/local_setup.zsh

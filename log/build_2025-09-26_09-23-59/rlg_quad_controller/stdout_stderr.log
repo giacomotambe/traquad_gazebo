@@ -1,0 +1,38 @@
+running develop
+running egg_info
+writing rlg_quad_controller.egg-info/PKG-INFO
+writing dependency_links to rlg_quad_controller.egg-info/dependency_links.txt
+writing entry points to rlg_quad_controller.egg-info/entry_points.txt
+writing requirements to rlg_quad_controller.egg-info/requires.txt
+writing top-level names to rlg_quad_controller.egg-info/top_level.txt
+reading manifest file 'rlg_quad_controller.egg-info/SOURCES.txt'
+writing manifest file 'rlg_quad_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg-quad-controller.egg-link (link to .)
+Installing force_measure script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_robot script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_sim script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing trajectory_publisher script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+
+Installed /home/ros/docker_simulation_ws/build/rlg_quad_controller
+running symlink_data
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/resource/rlg_quad_controller -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index/resource_index/packages
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/package.xml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_robot.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_sim.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_robot.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch/
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_sim.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch/
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/

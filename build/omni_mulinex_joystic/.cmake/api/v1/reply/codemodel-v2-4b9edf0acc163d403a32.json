@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fde7f0fcf1fb3aca462e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "omni_mulinex_joystic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "omni_mul_joystic_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni_mul_joystic_node-e331049d7c93a6a8b964.json",
+					"name" : "omni_mul_joystic_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omni_mulinex_joystic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni_mulinex_joystic-fee77e4a9deb8b2a7d9b.json",
+					"name" : "omni_mulinex_joystic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omni_mulinex_joystic_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni_mulinex_joystic_uninstall-77c90987fdb84f4bd781.json",
+					"name" : "omni_mulinex_joystic_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ce1cf03f4216260ba6ac.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ros/docker_simulation_ws/build/omni_mulinex_joystic",
+		"source" : "/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

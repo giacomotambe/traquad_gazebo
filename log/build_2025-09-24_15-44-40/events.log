@@ -1,0 +1,494 @@
+[0.000000] (-) TimerEvent: {}
+[0.002160] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.003395] (-) JobUnselected: {'identifier': 'ik_quad_foot_control'}
+[0.003720] (-) JobUnselected: {'identifier': 'mulinex_description'}
+[0.004921] (-) JobUnselected: {'identifier': 'mulinex_ignition'}
+[0.005170] (-) JobUnselected: {'identifier': 'mulinex_ignition_py'}
+[0.005351] (-) JobUnselected: {'identifier': 'omni_mulinex_joystic'}
+[0.005520] (-) JobUnselected: {'identifier': 'omni_vel_controller'}
+[0.005929] (-) JobUnselected: {'identifier': 'rbt_pd_cnt'}
+[0.006080] (-) JobUnselected: {'identifier': 'rlg_quad_controller'}
+[0.006201] (-) JobUnselected: {'identifier': 'wheels_vel_cnt'}
+[0.006379] (pi3hat_moteus_int_msgs) JobQueued: {'identifier': 'pi3hat_moteus_int_msgs', 'dependencies': OrderedDict()}
+[0.006541] (pi3hat_moteus_int_msgs) JobStarted: {'identifier': 'pi3hat_moteus_int_msgs'}
+[0.052332] (pi3hat_moteus_int_msgs) JobProgress: {'identifier': 'pi3hat_moteus_int_msgs', 'progress': 'cmake'}
+[0.060595] (pi3hat_moteus_int_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs'], 'cwd': '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/opt/ros/humble/lib/'), ('HISTFILESIZE', '2000'), ('USER', 'ros'), ('HOSTNAME', 'DESKTOP-SGIRAR6'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('IGN_VERSION', 'fortress'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all,graphics,display,video,utility,compute'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'dialog'), ('GZ_VERSION', 'harmonic'), ('PWD', '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('HISTFILE', '/home/ros/.bash_history'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097602] (-) TimerEvent: {}
+[0.198517] (-) TimerEvent: {}
+[0.299416] (-) TimerEvent: {}
+[0.313787] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.402752] (-) TimerEvent: {}
+[0.503695] (-) TimerEvent: {}
+[0.604607] (-) TimerEvent: {}
+[0.617567] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.679105] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.705339] (-) TimerEvent: {}
+[0.806287] (-) TimerEvent: {}
+[0.907108] (-) TimerEvent: {}
+[1.008121] (-) TimerEvent: {}
+[1.037701] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.072669] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.073503] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.075064] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.087601] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.108388] (-) TimerEvent: {}
+[1.209183] (-) TimerEvent: {}
+[1.310032] (-) TimerEvent: {}
+[1.410966] (-) TimerEvent: {}
+[1.423553] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.449907] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.450910] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.452337] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.470249] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.511229] (-) TimerEvent: {}
+[1.612049] (-) TimerEvent: {}
+[1.712836] (-) TimerEvent: {}
+[1.813672] (-) TimerEvent: {}
+[1.914534] (-) TimerEvent: {}
+[2.015394] (-) TimerEvent: {}
+[2.080954] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.115613] (-) TimerEvent: {}
+[2.216301] (-) TimerEvent: {}
+[2.289769] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.316551] (-) TimerEvent: {}
+[2.410638] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[2.416757] (-) TimerEvent: {}
+[2.517402] (-) TimerEvent: {}
+[2.543274] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.571904] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.609957] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.617718] (-) TimerEvent: {}
+[2.696753] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.717945] (-) TimerEvent: {}
+[2.745503] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.798764] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.818187] (-) TimerEvent: {}
+[2.818892] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.844901] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.918394] (-) TimerEvent: {}
+[3.018953] (-) TimerEvent: {}
+[3.119552] (-) TimerEvent: {}
+[3.220138] (-) TimerEvent: {}
+[3.320761] (-) TimerEvent: {}
+[3.421490] (-) TimerEvent: {}
+[3.499760] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[3.505756] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[3.513013] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[3.519867] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.521613] (-) TimerEvent: {}
+[3.622217] (-) TimerEvent: {}
+[3.722773] (-) TimerEvent: {}
+[3.823336] (-) TimerEvent: {}
+[3.923923] (-) TimerEvent: {}
+[4.024471] (-) TimerEvent: {}
+[4.125146] (-) TimerEvent: {}
+[4.225673] (-) TimerEvent: {}
+[4.239615] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.325915] (-) TimerEvent: {}
+[4.426585] (-) TimerEvent: {}
+[4.495601] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.526812] (-) TimerEvent: {}
+[4.530537] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.534778] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.573940] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.574327] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.574436] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.574533] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.603263] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.627001] (-) TimerEvent: {}
+[4.697483] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[4.702842] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[4.725146] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.727165] (-) TimerEvent: {}
+[4.822625] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.827409] (-) TimerEvent: {}
+[4.845556] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs\n'}
+[4.855803] (pi3hat_moteus_int_msgs) CommandEnded: {'returncode': 0}
+[4.857320] (pi3hat_moteus_int_msgs) JobProgress: {'identifier': 'pi3hat_moteus_int_msgs', 'progress': 'build'}
+[4.860745] (pi3hat_moteus_int_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs', '--', '-j12', '-l12'], 'cwd': '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/opt/ros/humble/lib/'), ('HISTFILESIZE', '2000'), ('USER', 'ros'), ('HOSTNAME', 'DESKTOP-SGIRAR6'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('IGN_VERSION', 'fortress'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all,graphics,display,video,utility,compute'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'dialog'), ('GZ_VERSION', 'harmonic'), ('PWD', '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('HISTFILE', '/home/ros/.bash_history'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.922138] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.927584] (-) TimerEvent: {}
+[4.941748] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.956198] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_pi3hat_moteus_int_msgs\n'}
+[5.027855] (-) TimerEvent: {}
+[5.128422] (-) TimerEvent: {}
+[5.228983] (-) TimerEvent: {}
+[5.329623] (-) TimerEvent: {}
+[5.430435] (-) TimerEvent: {}
+[5.522581] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.524134] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'creating pi3hat_moteus_int_msgs.egg-info\n'}
+[5.525356] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'writing pi3hat_moteus_int_msgs.egg-info/PKG-INFO\n'}
+[5.525871] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'writing dependency_links to pi3hat_moteus_int_msgs.egg-info/dependency_links.txt\n'}
+[5.526330] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'writing top-level names to pi3hat_moteus_int_msgs.egg-info/top_level.txt\n'}
+[5.526935] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"writing manifest file 'pi3hat_moteus_int_msgs.egg-info/SOURCES.txt'\n"}
+[5.530629] (-) TimerEvent: {}
+[5.531285] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"reading manifest file 'pi3hat_moteus_int_msgs.egg-info/SOURCES.txt'\n"}
+[5.532573] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"writing manifest file 'pi3hat_moteus_int_msgs.egg-info/SOURCES.txt'\n"}
+[5.583419] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_pi3hat_moteus_int_msgs_egg\n'}
+[5.630799] (-) TimerEvent: {}
+[5.731337] (-) TimerEvent: {}
+[5.831862] (-) TimerEvent: {}
+[5.932435] (-) TimerEvent: {}
+[6.038706] (-) TimerEvent: {}
+[6.139340] (-) TimerEvent: {}
+[6.221354] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  3%] Built target pi3hat_moteus_int_msgs__cpp\n'}
+[6.227799] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_c.dir/rosidl_generator_c/pi3hat_moteus_int_msgs/msg/detail/joints_states__functions.c.o\x1b[0m\n'}
+[6.228739] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_c.dir/rosidl_generator_c/pi3hat_moteus_int_msgs/msg/detail/packet_pass__functions.c.o\x1b[0m\n'}
+[6.229515] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_c.dir/rosidl_generator_c/pi3hat_moteus_int_msgs/msg/detail/joints_command__functions.c.o\x1b[0m\n'}
+[6.233084] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_c.dir/rosidl_generator_c/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__functions.c.o\x1b[0m\n'}
+[6.234791] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_c.dir/rosidl_generator_c/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__functions.c.o\x1b[0m\n'}
+[6.239768] (-) TimerEvent: {}
+[6.259829] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.260402] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.265262] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.340025] (-) TimerEvent: {}
+[6.417055] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libpi3hat_moteus_int_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[6.440246] (-) TimerEvent: {}
+[6.524699] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 17%] Built target pi3hat_moteus_int_msgs__rosidl_generator_c\n'}
+[6.540475] (-) TimerEvent: {}
+[6.557561] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.558418] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.558775] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.640746] (-) TimerEvent: {}
+[6.741660] (-) TimerEvent: {}
+[6.842556] (-) TimerEvent: {}
+[6.943284] (-) TimerEvent: {}
+[7.044037] (-) TimerEvent: {}
+[7.144626] (-) TimerEvent: {}
+[7.245390] (-) TimerEvent: {}
+[7.346316] (-) TimerEvent: {}
+[7.447108] (-) TimerEvent: {}
+[7.550322] (-) TimerEvent: {}
+[7.557587] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi3hat_moteus_int_msgs/msg/joints_command__type_support.cpp.o\x1b[0m\n'}
+[7.559886] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi3hat_moteus_int_msgs/msg/omni_mulinex_command__type_support.cpp.o\x1b[0m\n'}
+[7.561230] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi3hat_moteus_int_msgs/msg/joints_states__type_support.cpp.o\x1b[0m\n'}
+[7.561593] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi3hat_moteus_int_msgs/msg/packet_pass__type_support.cpp.o\x1b[0m\n'}
+[7.570953] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi3hat_moteus_int_msgs/msg/quad_foot_state__type_support.cpp.o\x1b[0m\n'}
+[7.654227] (-) TimerEvent: {}
+[7.754908] (-) TimerEvent: {}
+[7.855811] (-) TimerEvent: {}
+[7.960377] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.cpp.o\x1b[0m\n'}
+[7.961861] (-) TimerEvent: {}
+[7.977262] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.cpp.o\x1b[0m\n'}
+[7.981502] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.cpp.o\x1b[0m\n'}
+[8.062053] (-) TimerEvent: {}
+[8.162873] (-) TimerEvent: {}
+[8.253267] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi3hat_moteus_int_msgs/msg/packet_pass__type_support.cpp.o\x1b[0m\n'}
+[8.263059] (-) TimerEvent: {}
+[8.358183] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi3hat_moteus_int_msgs/msg/detail/dds_fastrtps/packet_pass__type_support.cpp.o\x1b[0m\n'}
+[8.363216] (-) TimerEvent: {}
+[8.400969] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi3hat_moteus_int_msgs/msg/joints_states__type_support.cpp.o\x1b[0m\n'}
+[8.465151] (-) TimerEvent: {}
+[8.543410] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi3hat_moteus_int_msgs/msg/joints_command__type_support.cpp.o\x1b[0m\n'}
+[8.565334] (-) TimerEvent: {}
+[8.666142] (-) TimerEvent: {}
+[8.685721] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi3hat_moteus_int_msgs/msg/omni_mulinex_command__type_support.cpp.o\x1b[0m\n'}
+[8.732758] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.c.o\x1b[0m\n'}
+[8.766256] (-) TimerEvent: {}
+[8.818841] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.cpp.o\x1b[0m\n'}
+[8.822752] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi3hat_moteus_int_msgs/msg/quad_foot_state__type_support.cpp.o\x1b[0m\n'}
+[8.827845] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support_c.cpp.o\x1b[0m\n'}
+[8.864281] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi3hat_moteus_int_msgs/msg/detail/dds_fastrtps/joints_states__type_support.cpp.o\x1b[0m\n'}
+[8.866394] (-) TimerEvent: {}
+[8.900579] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support_c.cpp.o\x1b[0m\n'}
+[8.910600] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.cpp.o\x1b[0m\n'}
+[8.938276] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.c.o\x1b[0m\n'}
+[8.966742] (-) TimerEvent: {}
+[8.973883] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.991835] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.066918] (-) TimerEvent: {}
+[9.168576] (-) TimerEvent: {}
+[9.183212] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 58%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_c\n'}
+[9.194521] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 58%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_cpp\n'}
+[9.247653] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi3hat_moteus_int_msgs/msg/detail/dds_fastrtps/joints_command__type_support.cpp.o\x1b[0m\n'}
+[9.250905] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi3hat_moteus_int_msgs/msg/detail/dds_fastrtps/omni_mulinex_command__type_support.cpp.o\x1b[0m\n'}
+[9.273075] (-) TimerEvent: {}
+[9.287706] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.c.o\x1b[0m\n'}
+[9.381889] (-) TimerEvent: {}
+[9.486387] (-) TimerEvent: {}
+[9.587645] (-) TimerEvent: {}
+[9.634428] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.c.o\x1b[0m\n'}
+[9.687949] (-) TimerEvent: {}
+[9.789040] (-) TimerEvent: {}
+[9.890239] (-) TimerEvent: {}
+[9.905984] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.c.o\x1b[0m\n'}
+[9.992194] (-) TimerEvent: {}
+[10.092916] (-) TimerEvent: {}
+[10.185789] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.193094] (-) TimerEvent: {}
+[10.310234] (-) TimerEvent: {}
+[10.375931] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 68%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c\n'}
+[10.410885] (-) TimerEvent: {}
+[10.417351] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi3hat_moteus_int_msgs/msg/detail/dds_fastrtps/quad_foot_state__type_support.cpp.o\x1b[0m\n'}
+[10.454310] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support_c.cpp.o\x1b[0m\n'}
+[10.502549] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support_c.cpp.o\x1b[0m\n'}
+[10.511129] (-) TimerEvent: {}
+[10.544560] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support_c.cpp.o\x1b[0m\n'}
+[10.617426] (-) TimerEvent: {}
+[10.721942] (-) TimerEvent: {}
+[10.822848] (-) TimerEvent: {}
+[10.926148] (-) TimerEvent: {}
+[11.026878] (-) TimerEvent: {}
+[11.127622] (-) TimerEvent: {}
+[11.229568] (-) TimerEvent: {}
+[11.330487] (-) TimerEvent: {}
+[11.377789] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.430760] (-) TimerEvent: {}
+[11.531539] (-) TimerEvent: {}
+[11.632420] (-) TimerEvent: {}
+[11.672842] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 76%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp\n'}
+[11.732645] (-) TimerEvent: {}
+[11.833443] (-) TimerEvent: {}
+[11.934184] (-) TimerEvent: {}
+[11.938789] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.034361] (-) TimerEvent: {}
+[12.102023] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 77%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.134557] (-) TimerEvent: {}
+[12.197521] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.234756] (-) TimerEvent: {}
+[12.335305] (-) TimerEvent: {}
+[12.357115] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 79%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.400714] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 79%] Built target pi3hat_moteus_int_msgs\n'}
+[12.435521] (-) TimerEvent: {}
+[12.444437] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.535764] (-) TimerEvent: {}
+[12.636444] (-) TimerEvent: {}
+[12.737133] (-) TimerEvent: {}
+[12.837685] (-) TimerEvent: {}
+[12.938387] (-) TimerEvent: {}
+[13.038996] (-) TimerEvent: {}
+[13.139689] (-) TimerEvent: {}
+[13.240189] (-) TimerEvent: {}
+[13.340687] (-) TimerEvent: {}
+[13.441268] (-) TimerEvent: {}
+[13.541850] (-) TimerEvent: {}
+[13.642422] (-) TimerEvent: {}
+[13.743792] (-) TimerEvent: {}
+[13.770693] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 80%] Built target pi3hat_moteus_int_msgs__py\n'}
+[13.801644] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_py.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/msg/_joints_states_s.c.o\x1b[0m\n'}
+[13.801983] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_py.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/msg/_joints_command_s.c.o\x1b[0m\n'}
+[13.802253] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_py.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/msg/_packet_pass_s.c.o\x1b[0m\n'}
+[13.802980] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_py.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command_s.c.o\x1b[0m\n'}
+[13.803208] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_generator_py.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/msg/_quad_foot_state_s.c.o\x1b[0m\n'}
+[13.843998] (-) TimerEvent: {}
+[13.944684] (-) TimerEvent: {}
+[14.045395] (-) TimerEvent: {}
+[14.118378] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi3hat_moteus_int_msgs/libpi3hat_moteus_int_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.145569] (-) TimerEvent: {}
+[14.178455] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 90%] Built target pi3hat_moteus_int_msgs__rosidl_generator_py\n'}
+[14.211952] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.212242] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.212381] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.245790] (-) TimerEvent: {}
+[14.346367] (-) TimerEvent: {}
+[14.424290] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.430308] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.432442] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.446594] (-) TimerEvent: {}
+[14.506120] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[100%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.506743] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[100%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[14.516124] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'[100%] Built target pi3hat_moteus_int_msgs__rosidl_typesupport_c__pyext\n'}
+[14.537675] (pi3hat_moteus_int_msgs) CommandEnded: {'returncode': 0}
+[14.539416] (pi3hat_moteus_int_msgs) JobProgress: {'identifier': 'pi3hat_moteus_int_msgs', 'progress': 'install'}
+[14.546869] (-) TimerEvent: {}
+[14.556748] (pi3hat_moteus_int_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs'], 'cwd': '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/opt/ros/humble/lib/'), ('HISTFILESIZE', '2000'), ('USER', 'ros'), ('HOSTNAME', 'DESKTOP-SGIRAR6'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('IGN_VERSION', 'fortress'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all,graphics,display,video,utility,compute'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'dialog'), ('GZ_VERSION', 'harmonic'), ('PWD', '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('HISTFILE', '/home/ros/.bash_history'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.570027] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.571178] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.573542] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/rosidl_interfaces/pi3hat_moteus_int_msgs\n'}
+[14.592737] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__functions.h\n'}
+[14.608828] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__struct.h\n'}
+[14.623442] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.h\n'}
+[14.638535] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__functions.h\n'}
+[14.647163] (-) TimerEvent: {}
+[14.654316] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__struct.h\n'}
+[14.669414] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.h\n'}
+[14.684920] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__functions.h\n'}
+[14.701494] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__struct.h\n'}
+[14.719730] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.h\n'}
+[14.738862] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__functions.h\n'}
+[14.747408] (-) TimerEvent: {}
+[14.756349] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__struct.h\n'}
+[14.773966] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.h\n'}
+[14.788924] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__functions.h\n'}
+[14.804753] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__struct.h\n'}
+[14.822791] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.h\n'}
+[14.839345] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_command.h\n'}
+[14.847624] (-) TimerEvent: {}
+[14.859495] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_states.h\n'}
+[14.875736] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/omni_mulinex_command.h\n'}
+[14.890690] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/packet_pass.h\n'}
+[14.907139] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/quad_foot_state.h\n'}
+[14.921347] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.937241] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/library_path.sh\n'}
+[14.947844] (-) TimerEvent: {}
+[14.954671] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/library_path.dsv\n'}
+[14.970748] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_fastrtps_c.h\n'}
+[14.984756] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_fastrtps_c.h\n'}
+[15.000878] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_fastrtps_c.h\n'}
+[15.016866] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_fastrtps_c.h\n'}
+[15.031919] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_fastrtps_c.h\n'}
+[15.044666] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.048093] (-) TimerEvent: {}
+[15.061360] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__builder.hpp\n'}
+[15.076031] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__struct.hpp\n'}
+[15.090507] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__traits.hpp\n'}
+[15.106679] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__type_support.hpp\n'}
+[15.120316] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__builder.hpp\n'}
+[15.135007] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__struct.hpp\n'}
+[15.148320] (-) TimerEvent: {}
+[15.150350] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__traits.hpp\n'}
+[15.167567] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__type_support.hpp\n'}
+[15.182290] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__builder.hpp\n'}
+[15.196298] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__struct.hpp\n'}
+[15.209523] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__traits.hpp\n'}
+[15.223104] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__type_support.hpp\n'}
+[15.234429] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__builder.hpp\n'}
+[15.246840] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__struct.hpp\n'}
+[15.248459] (-) TimerEvent: {}
+[15.262293] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__traits.hpp\n'}
+[15.275585] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__type_support.hpp\n'}
+[15.289179] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__builder.hpp\n'}
+[15.302001] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__struct.hpp\n'}
+[15.313116] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__traits.hpp\n'}
+[15.325153] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__type_support.hpp\n'}
+[15.336692] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_command.hpp\n'}
+[15.348750] (-) TimerEvent: {}
+[15.349569] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/joints_states.hpp\n'}
+[15.361819] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/omni_mulinex_command.hpp\n'}
+[15.377041] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/packet_pass.hpp\n'}
+[15.389857] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/quad_foot_state.hpp\n'}
+[15.402640] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.415533] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.428027] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.442369] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.448899] (-) TimerEvent: {}
+[15.456151] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.468401] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.480826] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.495077] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_introspection_c.h\n'}
+[15.513950] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_introspection_c.h\n'}
+[15.528801] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_introspection_c.h\n'}
+[15.547282] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_introspection_c.h\n'}
+[15.549203] (-) TimerEvent: {}
+[15.563137] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_introspection_c.h\n'}
+[15.576344] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.588507] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.603102] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.620216] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/omni_mulinex_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.635743] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/packet_pass__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.649433] (-) TimerEvent: {}
+[15.651594] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/include/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs/msg/detail/quad_foot_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.665571] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/pythonpath.sh\n'}
+[15.677948] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/pythonpath.dsv\n'}
+[15.693663] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.705675] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.717961] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.730464] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.743225] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/__init__.py\n'}
+[15.749616] (-) TimerEvent: {}
+[15.757817] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[15.769837] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.782182] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/_pi3hat_moteus_int_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.794185] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/libpi3hat_moteus_int_msgs__rosidl_generator_py.so\n'}
+[15.807540] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/__init__.py\n'}
+[15.820154] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_command.py\n'}
+[15.831960] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_command_s.c\n'}
+[15.843038] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_states.py\n'}
+[15.849874] (-) TimerEvent: {}
+[15.857056] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_states_s.c\n'}
+[15.869011] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command.py\n'}
+[15.880738] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command_s.c\n'}
+[15.891873] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_packet_pass.py\n'}
+[15.903579] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_packet_pass_s.c\n'}
+[15.916443] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_quad_foot_state.py\n'}
+[15.929201] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_quad_foot_state_s.c\n'}
+[15.940154] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.950049] (-) TimerEvent: {}
+[15.953258] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.968018] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.981328] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.981814] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.982331] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/pi3hat_moteus_int_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.983209] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/PacketPass.idl\n'}
+[15.996398] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsStates.idl\n'}
+[16.010526] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsCommand.idl\n'}
+[16.027968] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/OmniMulinexCommand.idl\n'}
+[16.040437] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/QuadFootState.idl\n'}
+[16.050399] (-) TimerEvent: {}
+[16.053733] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/PacketPass.msg\n'}
+[16.067586] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsStates.msg\n'}
+[16.079856] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/JointsCommand.msg\n'}
+[16.093265] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/OmniMulinexCommand.msg\n'}
+[16.106852] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/msg/QuadFootState.msg\n'}
+[16.120664] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/package_run_dependencies/pi3hat_moteus_int_msgs\n'}
+[16.135397] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/parent_prefix_path/pi3hat_moteus_int_msgs\n'}
+[16.148763] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/ament_prefix_path.sh\n'}
+[16.150581] (-) TimerEvent: {}
+[16.162371] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/ament_prefix_path.dsv\n'}
+[16.174348] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/path.sh\n'}
+[16.186230] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/environment/path.dsv\n'}
+[16.197316] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.bash\n'}
+[16.209151] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.sh\n'}
+[16.221461] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.zsh\n'}
+[16.235708] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/local_setup.dsv\n'}
+[16.247238] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.dsv\n'}
+[16.250814] (-) TimerEvent: {}
+[16.261639] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/ament_index/resource_index/packages/pi3hat_moteus_int_msgs\n'}
+[16.278554] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.293399] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.309724] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.326342] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.344658] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.351051] (-) TimerEvent: {}
+[16.362618] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.377115] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.392381] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgsConfig.cmake\n'}
+[16.407824] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgsConfig-version.cmake\n'}
+[16.423500] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.xml\n'}
+[16.438773] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_c.so\n'}
+[16.439557] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_c.so" to ""\n'}
+[16.439910] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[16.440473] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.440640] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.441352] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.441524] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.so\n'}
+[16.442175] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.442457] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_c.so\n'}
+[16.443090] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_c.so" to ""\n'}
+[16.443310] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[16.444042] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.444229] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_cpp.so\n'}
+[16.444751] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[16.451263] (-) TimerEvent: {}
+[16.515583] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Listing '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs'...\n"}
+[16.515873] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/__init__.py'...\n"}
+[16.515987] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Listing '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg'...\n"}
+[16.516108] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/__init__.py'...\n"}
+[16.516207] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_command.py'...\n"}
+[16.516340] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_joints_states.py'...\n"}
+[16.516467] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_omni_mulinex_command.py'...\n"}
+[16.516564] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_packet_pass.py'...\n"}
+[16.516679] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b"Compiling '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/local/lib/python3.10/dist-packages/pi3hat_moteus_int_msgs/msg/_quad_foot_state.py'...\n"}
+[16.523677] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_py.so\n'}
+[16.524439] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/libpi3hat_moteus_int_msgs__rosidl_generator_py.so" to ""\n'}
+[16.524758] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cExport.cmake\n'}
+[16.525400] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.525824] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.526261] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.526696] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.527138] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.527500] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.527988] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.528533] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.529118] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.529625] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.530015] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.530595] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.531024] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.531516] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/pi3hat_moteus_int_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.532213] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.532764] (pi3hat_moteus_int_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/cmake/export_pi3hat_moteus_int_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.538194] (pi3hat_moteus_int_msgs) CommandEnded: {'returncode': 0}
+[16.554790] (-) TimerEvent: {}
+[16.580850] (pi3hat_moteus_int_msgs) JobEnded: {'identifier': 'pi3hat_moteus_int_msgs', 'rc': 0}
+[16.581755] (-) EventReactorShutdown: {}

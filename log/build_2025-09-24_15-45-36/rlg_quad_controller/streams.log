@@ -1,0 +1,43 @@
+[2.599s] Invoking command in '/home/ros/docker_simulation_ws/build/rlg_quad_controller': PYTHONPATH=/home/ros/docker_simulation_ws/build/rlg_quad_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/rlg_quad_controller/build --no-deps symlink_data
+[3.527s] running develop
+[4.153s] running egg_info
+[4.153s] creating rlg_quad_controller.egg-info
+[4.155s] writing rlg_quad_controller.egg-info/PKG-INFO
+[4.158s] writing dependency_links to rlg_quad_controller.egg-info/dependency_links.txt
+[4.159s] writing entry points to rlg_quad_controller.egg-info/entry_points.txt
+[4.160s] writing requirements to rlg_quad_controller.egg-info/requires.txt
+[4.160s] writing top-level names to rlg_quad_controller.egg-info/top_level.txt
+[4.161s] writing manifest file 'rlg_quad_controller.egg-info/SOURCES.txt'
+[4.167s] reading manifest file 'rlg_quad_controller.egg-info/SOURCES.txt'
+[4.170s] writing manifest file 'rlg_quad_controller.egg-info/SOURCES.txt'
+[4.175s] running build_ext
+[4.176s] Creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg-quad-controller.egg-link (link to .)
+[4.179s] Installing force_measure script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+[4.181s] Installing inference_controller_robot script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+[4.182s] Installing inference_controller_sim script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+[4.183s] Installing trajectory_publisher script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+[4.184s] 
+[4.184s] Installed /home/ros/docker_simulation_ws/build/rlg_quad_controller
+[4.185s] running symlink_data
+[4.185s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index
+[4.187s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index/resource_index
+[4.189s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index/resource_index/packages
+[4.190s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/resource/rlg_quad_controller -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index/resource_index/packages
+[4.192s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/package.xml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller
+[4.192s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+[4.193s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_robot.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+[4.195s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/launch/omniquad_inference_sim.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+[4.195s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+[4.196s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+[4.197s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_simulation_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+[4.198s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+[4.200s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/config/mulinex_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+[4.201s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+[4.203s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+[4.207s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+[4.208s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+[4.209s] creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+[4.211s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+[4.212s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+[4.213s] symbolically linking /home/ros/docker_simulation_ws/build/rlg_quad_controller/models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+[4.310s] Invoked command in '/home/ros/docker_simulation_ws/build/rlg_quad_controller' returned '0': PYTHONPATH=/home/ros/docker_simulation_ws/build/rlg_quad_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/rlg_quad_controller/build --no-deps symlink_data
