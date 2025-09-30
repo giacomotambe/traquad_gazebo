@@ -216,13 +216,6 @@ def generate_launch_description():
         ],
         parameters=[{"use_sim_time": True}],
     )
-    omni_control_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=['omni_control',
-         '--param-file',
-            conf_file_path],
-    )
 
     pd_control_spawner = Node(
         package='controller_manager',
@@ -231,6 +224,14 @@ def generate_launch_description():
          '--param-file',
             conf_file_path],
     )
+    wheels_vel_cnt_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['wheels_vel_controller',
+        '--param-file',
+           conf_file_path],
+    )
+
     
     # add arguments
     ld.add_action(gz_verbosity_arg)
@@ -266,14 +267,14 @@ def generate_launch_description():
     ld.add_action(gazebo_gt)
 
     # load controller after spawn entity
-    ld.add_action(
-        RegisterEventHandler(
-            event_handler=OnProcessExit(
-                target_action=spawn_entity,
-                on_exit=[omni_control_spawner],
-            )
-        )
-    )
+    #ld.add_action(
+    #    RegisterEventHandler(
+    #        event_handler=OnProcessExit(
+    #            target_action=spawn_entity,
+    #            on_exit=[omni_control_spawner],
+    #        )
+    #    )
+    #)
     ld.add_action(
         RegisterEventHandler(
             event_handler=OnProcessExit(
@@ -282,6 +283,15 @@ def generate_launch_description():
             )
         )
     )
+    ld.add_action(
+        RegisterEventHandler(
+            event_handler=OnProcessExit(
+                target_action=spawn_entity,
+                on_exit=[wheels_vel_cnt_spawner],
+            )
+        )
+    )
+    
     # ld.add_action(
     #     joy_launch
     # )

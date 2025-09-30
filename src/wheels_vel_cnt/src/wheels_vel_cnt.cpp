@@ -110,7 +110,7 @@ controller_interface::return_type WheelsVelCnt::update(const rclcpp::Time &, con
   // Applica i comandi
   std::lock_guard<std::mutex> lock(command_mutex_);
   for (size_t i = 0; i < wheel_names_.size(); ++i)
-    command_interfaces_[i].set_value(last_command_[i]);
+    command_interfaces_[i].set_value(last_command_[i/4]);
 
   return controller_interface::return_type::OK;
 }
@@ -120,8 +120,8 @@ controller_interface::return_type WheelsVelCnt::update(const rclcpp::Time &, con
 void WheelsVelCnt::cmd_callback(const custom_interfaces::msg::WheelVelocityCommand::SharedPtr msg)
 {
   std::lock_guard<std::mutex> lock(command_mutex_);
-  last_command_ = {msg->v_rf, msg->v_lf, msg->v_rb, msg->v_lb};
-  RCLCPP_INFO(get_node()->get_logger(), "Received cmd: rf=%.2f, lf=%.2f, rb=%.2f, lb=%.2f",
+  last_command_ = { msg->v_lf, msg->v_lb,msg->v_rf, msg->v_rb};
+  RCLCPP_DEBUG(get_node()->get_logger(), "Received cmd: rf=%.2f, lf=%.2f, rb=%.2f, lb=%.2f",
               msg->v_rf, msg->v_lf, msg->v_rb, msg->v_lb);
 }
 

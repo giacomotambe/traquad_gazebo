@@ -1,0 +1,24 @@
+[7.300s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition_py': PYTHONPATH=/home/ros/docker_simulation_ws/build/mulinex_ignition_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build --no-deps symlink_data
+[9.815s] running develop
+[10.977s] running egg_info
+[10.978s] writing mulinex_ignition_py.egg-info/PKG-INFO
+[10.978s] writing dependency_links to mulinex_ignition_py.egg-info/dependency_links.txt
+[10.980s] writing entry points to mulinex_ignition_py.egg-info/entry_points.txt
+[10.981s] writing requirements to mulinex_ignition_py.egg-info/requires.txt
+[10.983s] writing top-level names to mulinex_ignition_py.egg-info/top_level.txt
+[10.989s] reading manifest file 'mulinex_ignition_py.egg-info/SOURCES.txt'
+[10.993s] writing manifest file 'mulinex_ignition_py.egg-info/SOURCES.txt'
+[11.002s] running build_ext
+[11.003s] Creating /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex-ignition-py.egg-link (link to .)
+[11.008s] Installing bridge_node script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.009s] Installing getup script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.010s] Installing getup_omni_1 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.011s] Installing gostraighton script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.012s] Installing move_pd script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.013s] Installing move_wheels script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.015s] Installing move_wheels_2 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.016s] Installing walking script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+[11.018s] 
+[11.019s] Installed /home/ros/docker_simulation_ws/build/mulinex_ignition_py
+[11.019s] running symlink_data
+[11.192s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition_py' returned '0': PYTHONPATH=/home/ros/docker_simulation_ws/build/mulinex_ignition_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build --no-deps symlink_data

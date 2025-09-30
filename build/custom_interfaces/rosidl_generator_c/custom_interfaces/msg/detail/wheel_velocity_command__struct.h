@@ -20,10 +20,10 @@ extern "C"
 /// Struct defined in msg/WheelVelocityCommand in the package custom_interfaces.
 typedef struct custom_interfaces__msg__WheelVelocityCommand
 {
-  double v_rf;
   double v_lf;
-  double v_rb;
   double v_lb;
+  double v_rf;
+  double v_rb;
 } custom_interfaces__msg__WheelVelocityCommand;
 
 // Struct for a sequence of custom_interfaces__msg__WheelVelocityCommand.

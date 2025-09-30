@@ -1,0 +1,6 @@
+[console_scripts]
+force_measure = rlg_quad_controller.force_measure:main
+inference_controller_robot = rlg_quad_controller.inference_controller_robot:main
+inference_controller_sim = rlg_quad_controller.inference_controller_sim:main
+trajectory_publisher = rlg_quad_controller.trajectory_publisher:main
+

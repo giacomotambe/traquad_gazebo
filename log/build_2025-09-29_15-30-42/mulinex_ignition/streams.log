@@ -1,0 +1,39 @@
+[0.072s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[0.486s] [ 50%] Built target getup_node
+[0.488s] [ 66%] Built target gt_odom_pub
+[0.535s] [100%] Built target move_wheels
+[0.647s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[0.664s] Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition
+[0.737s] -- Install configuration: ""
+[0.746s] -- Execute custom install script
+[0.750s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/gt_odom_pub
+[0.751s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/move_wheels
+[0.751s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/getup_node
+[0.752s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt.launch.py
+[0.753s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PD_wheels.launch.py
+[0.754s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PDonly.launch.py
+[0.754s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/test_lidar.launch.py
+[0.754s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/mulinex_mf.yaml
+[0.755s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/omnicar.yaml
+[0.756s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/empty.sdf
+[0.759s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/turtle_arena.sdf
+[0.760s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/hexagon.dae
+[0.761s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/wall.dae
+[0.762s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.config
+[0.763s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.sdf
+[0.763s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/package_run_dependencies/mulinex_ignition
+[0.763s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/parent_prefix_path/mulinex_ignition
+[0.765s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.sh
+[0.765s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.dsv
+[0.766s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.sh
+[0.766s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.dsv
+[0.766s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.bash
+[0.766s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.sh
+[0.767s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.zsh
+[0.767s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.dsv
+[0.767s] -- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv
+[0.818s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/packages/mulinex_ignition
+[0.818s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig.cmake
+[0.818s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig-version.cmake
+[0.823s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.xml
+[0.828s] Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition

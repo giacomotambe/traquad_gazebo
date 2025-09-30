@@ -49,24 +49,24 @@ static bool _WheelVelocityCommand__cdr_serialize(
     return false;
   }
   const _WheelVelocityCommand__ros_msg_type * ros_message = static_cast<const _WheelVelocityCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: v_rf
-  {
-    cdr << ros_message->v_rf;
-  }
-
   // Field name: v_lf
   {
     cdr << ros_message->v_lf;
   }
 
-  // Field name: v_rb
-  {
-    cdr << ros_message->v_rb;
-  }
-
   // Field name: v_lb
   {
     cdr << ros_message->v_lb;
+  }
+
+  // Field name: v_rf
+  {
+    cdr << ros_message->v_rf;
+  }
+
+  // Field name: v_rb
+  {
+    cdr << ros_message->v_rb;
   }
 
   return true;
@@ -81,24 +81,24 @@ static bool _WheelVelocityCommand__cdr_deserialize(
     return false;
   }
   _WheelVelocityCommand__ros_msg_type * ros_message = static_cast<_WheelVelocityCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: v_rf
-  {
-    cdr >> ros_message->v_rf;
-  }
-
   // Field name: v_lf
   {
     cdr >> ros_message->v_lf;
   }
 
-  // Field name: v_rb
-  {
-    cdr >> ros_message->v_rb;
-  }
-
   // Field name: v_lb
   {
     cdr >> ros_message->v_lb;
+  }
+
+  // Field name: v_rf
+  {
+    cdr >> ros_message->v_rf;
+  }
+
+  // Field name: v_rb
+  {
+    cdr >> ros_message->v_rb;
   }
 
   return true;
@@ -118,27 +118,27 @@ size_t get_serialized_size_custom_interfaces__msg__WheelVelocityCommand(
   (void)padding;
   (void)wchar_size;
 
-  // field.name v_rf
-  {
-    size_t item_size = sizeof(ros_message->v_rf);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // field.name v_lf
   {
     size_t item_size = sizeof(ros_message->v_lf);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name v_rb
-  {
-    size_t item_size = sizeof(ros_message->v_rb);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // field.name v_lb
   {
     size_t item_size = sizeof(ros_message->v_lb);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name v_rf
+  {
+    size_t item_size = sizeof(ros_message->v_rf);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name v_rb
+  {
+    size_t item_size = sizeof(ros_message->v_rb);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -171,14 +171,6 @@ size_t max_serialized_size_custom_interfaces__msg__WheelVelocityCommand(
   full_bounded = true;
   is_plain = true;
 
-  // member: v_rf
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
   // member: v_lf
   {
     size_t array_size = 1;
@@ -187,7 +179,7 @@ size_t max_serialized_size_custom_interfaces__msg__WheelVelocityCommand(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: v_rb
+  // member: v_lb
   {
     size_t array_size = 1;
 
@@ -195,7 +187,15 @@ size_t max_serialized_size_custom_interfaces__msg__WheelVelocityCommand(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: v_lb
+  // member: v_rf
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: v_rb
   {
     size_t array_size = 1;
 
@@ -212,7 +212,7 @@ size_t max_serialized_size_custom_interfaces__msg__WheelVelocityCommand(
     using DataType = custom_interfaces__msg__WheelVelocityCommand;
     is_plain =
       (
-      offsetof(DataType, v_lb) +
+      offsetof(DataType, v_rb) +
       last_member_size
       ) == ret_val;
   }

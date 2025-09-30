@@ -1,0 +1,997 @@
+[0.213s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.213s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x75e29fa0a080>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75e29fa096c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75e29fa096c0>>, mixin_verb=('build',))
+[0.597s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.599s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ros/docker_simulation_ws'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'ignore_ament_install'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'ros'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['cmake', 'python']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'cmake'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'python'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extensions ['python_setup_py']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(DockerFiles) by extension 'python_setup_py'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['ignore', 'ignore_ament_install']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'ros'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['cmake', 'python']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'cmake'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'python'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extensions ['python_setup_py']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments) by extension 'python_setup_py'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'ignore'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'ignore_ament_install'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'ros'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['cmake', 'python']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'cmake'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'python'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extensions ['python_setup_py']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_10:18:24) by extension 'python_setup_py'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['colcon_meta']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'colcon_meta'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['ros']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'ros'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['cmake', 'python']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:26:37) by extension 'python_setup_py'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'colcon_pkg'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['colcon_meta']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'colcon_meta'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['ros']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'ros'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['cmake', 'python']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'cmake'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'python'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extensions ['python_setup_py']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_11:29:38) by extension 'python_setup_py'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'ignore'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'ignore_ament_install'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['colcon_pkg']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'colcon_pkg'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['colcon_meta']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'colcon_meta'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['ros']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'ros'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['cmake', 'python']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'cmake'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'python'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extensions ['python_setup_py']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(omni_mul_experiments/Experiment_OM_2025_7_17_9:39:54) by extension 'python_setup_py'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'ros'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['cmake', 'python']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'cmake'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'python'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extensions ['python_setup_py']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_26_29) by extension 'python_setup_py'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['ignore', 'ignore_ament_install']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'ignore'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'ignore_ament_install'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['colcon_pkg']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'colcon_pkg'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['colcon_meta']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'colcon_meta'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['ros']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'ros'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['cmake', 'python']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'cmake'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'python'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extensions ['python_setup_py']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_28_12) by extension 'python_setup_py'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['ignore', 'ignore_ament_install']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'ignore'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'ignore_ament_install'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['colcon_pkg']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'colcon_pkg'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['colcon_meta']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'colcon_meta'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['ros']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'ros'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['cmake', 'python']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'cmake'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'python'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extensions ['python_setup_py']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_32_51) by extension 'python_setup_py'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['ignore', 'ignore_ament_install']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'ignore'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'ignore_ament_install'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['colcon_pkg']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'colcon_pkg'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['colcon_meta']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'colcon_meta'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['ros']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'ros'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['cmake', 'python']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'cmake'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'python'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extensions ['python_setup_py']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2025_07_28-09_39_28) by extension 'python_setup_py'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'ros'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['cmake', 'python']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'cmake'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'python'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extensions ['python_setup_py']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC) by extension 'python_setup_py'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extensions ['ignore', 'ignore_ament_install']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extension 'ignore'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extension 'ignore_ament_install'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extensions ['colcon_pkg']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extension 'colcon_pkg'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extensions ['ros']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic) by extension 'ros'
+[0.667s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic' with type 'ros.ament_cmake' and name 'omni_mulinex_joystic'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'ignore_ament_install'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['colcon_pkg']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'colcon_pkg'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['colcon_meta']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'colcon_meta'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['ros']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'ros'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['cmake', 'python']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'cmake'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'python'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extensions ['python_setup_py']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers) by extension 'python_setup_py'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/log) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/log) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/log) ignored
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'ignore_ament_install'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['colcon_pkg']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'colcon_pkg'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['colcon_meta']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'colcon_meta'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['ros']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'ros'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['cmake', 'python']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'cmake'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'python'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extensions ['python_setup_py']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src) by extension 'python_setup_py'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extension 'ignore'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extension 'ignore_ament_install'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extensions ['colcon_pkg']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extension 'colcon_pkg'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extensions ['colcon_meta']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extension 'colcon_meta'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extensions ['ros']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/ik_quad_foot_control) by extension 'ros'
+[0.675s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Pi3Hat_Controllers/src/ik_quad_foot_control' with type 'ros.ament_cmake' and name 'ik_quad_foot_control'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extension 'ignore'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extension 'ignore_ament_install'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extensions ['colcon_pkg']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extension 'colcon_pkg'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extensions ['colcon_meta']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extension 'colcon_meta'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extensions ['ros']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/omni_vel_controller) by extension 'ros'
+[0.681s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Pi3Hat_Controllers/src/omni_vel_controller' with type 'ros.ament_cmake' and name 'omni_vel_controller'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extension 'ignore'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extension 'ignore_ament_install'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extensions ['colcon_pkg']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extension 'colcon_pkg'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extensions ['colcon_meta']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extension 'colcon_meta'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extensions ['ros']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs) by extension 'ros'
+[0.684s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs' with type 'ros.ament_cmake' and name 'pi3hat_moteus_int_msgs'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.686s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extension 'ignore'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extension 'ignore_ament_install'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extensions ['colcon_pkg']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extension 'colcon_pkg'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extensions ['colcon_meta']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extension 'colcon_meta'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extensions ['ros']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_description) by extension 'ros'
+[0.688s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mulinex_description' with type 'ros.ament_cmake' and name 'mulinex_description'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extension 'ignore'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extension 'ignore_ament_install'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extensions ['colcon_pkg']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extension 'colcon_pkg'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extensions ['colcon_meta']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extension 'colcon_meta'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extensions ['ros']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition) by extension 'ros'
+[0.691s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mulinex_ignition' with type 'ros.ament_cmake' and name 'mulinex_ignition'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extension 'ignore'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extension 'ignore_ament_install'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extensions ['colcon_pkg']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extension 'colcon_pkg'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extensions ['colcon_meta']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extension 'colcon_meta'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extensions ['ros']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/mulinex_ignition_py) by extension 'ros'
+[0.693s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mulinex_ignition_py' with type 'ros.ament_python' and name 'mulinex_ignition_py'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extensions ['ignore', 'ignore_ament_install']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extension 'ignore'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extension 'ignore_ament_install'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extensions ['colcon_pkg']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extension 'colcon_pkg'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extensions ['colcon_meta']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extension 'colcon_meta'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extensions ['ros']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt_pd_cnt) by extension 'ros'
+[0.696s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt_pd_cnt' with type 'ros.ament_cmake' and name 'rbt_pd_cnt'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extension 'ignore'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extension 'ignore_ament_install'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extensions ['colcon_pkg']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extension 'colcon_pkg'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extensions ['colcon_meta']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extension 'colcon_meta'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extensions ['ros']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/rlg_quad_controller) by extension 'ros'
+[0.699s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rlg_quad_controller' with type 'ros.ament_python' and name 'rlg_quad_controller'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extensions ['ignore', 'ignore_ament_install']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extension 'ignore'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extensions ['colcon_pkg']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extension 'colcon_pkg'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extensions ['colcon_meta']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extensions ['ros']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/wheels_vel_cnt) by extension 'ros'
+[0.703s] DEBUG:colcon.colcon_core.package_identification:Package 'src/wheels_vel_cnt' with type 'ros.ament_cmake' and name 'wheels_vel_cnt'
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.784s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/custom_interfaces', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/custom_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_args' from command line to 'None'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_target' from command line to 'None'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.785s] Level 5:colcon.colcon_core.verb:set package 'mulinex_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.785s] DEBUG:colcon.colcon_core.verb:Building package 'mulinex_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/mulinex_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/mulinex_description', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/mulinex_description', 'symlink_install': True, 'test_result_base': None}
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_args' from command line to 'None'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_target' from command line to 'None'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.787s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.787s] DEBUG:colcon.colcon_core.verb:Building package 'mulinex_ignition_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/mulinex_ignition_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/mulinex_ignition_py', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/mulinex_ignition_py', 'symlink_install': True, 'test_result_base': None}
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_args' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_target' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'pi3hat_moteus_int_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.788s] DEBUG:colcon.colcon_core.verb:Building package 'pi3hat_moteus_int_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_args' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_target' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.790s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.790s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.790s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.790s] Level 5:colcon.colcon_core.verb:set package 'ik_quad_foot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.790s] DEBUG:colcon.colcon_core.verb:Building package 'ik_quad_foot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/ik_quad_foot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/ik_quad_foot_control', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control', 'symlink_install': True, 'test_result_base': None}
+[0.790s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_target' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_clean_cache' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_clean_first' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'cmake_force_configure' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'ament_cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'catkin_cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mulinex_ignition' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.791s] DEBUG:colcon.colcon_core.verb:Building package 'mulinex_ignition' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/mulinex_ignition', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/mulinex_ignition', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/mulinex_ignition', 'symlink_install': True, 'test_result_base': None}
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_target' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_clean_cache' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_clean_first' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'cmake_force_configure' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'ament_cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'omni_mulinex_joystic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.792s] DEBUG:colcon.colcon_core.verb:Building package 'omni_mulinex_joystic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/omni_mulinex_joystic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic', 'symlink_install': True, 'test_result_base': None}
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_target' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'omni_vel_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.793s] DEBUG:colcon.colcon_core.verb:Building package 'omni_vel_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/omni_vel_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/omni_vel_controller', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller', 'symlink_install': True, 'test_result_base': None}
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_target' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_clean_first' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'cmake_force_configure' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'ament_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'rbt_pd_cnt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.795s] DEBUG:colcon.colcon_core.verb:Building package 'rbt_pd_cnt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/rbt_pd_cnt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/rbt_pd_cnt', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/rbt_pd_cnt', 'symlink_install': True, 'test_result_base': None}
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_args' from command line to 'None'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_target' from command line to 'None'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.798s] Level 5:colcon.colcon_core.verb:set package 'rlg_quad_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.798s] DEBUG:colcon.colcon_core.verb:Building package 'rlg_quad_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/rlg_quad_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/rlg_quad_controller', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/rlg_quad_controller', 'symlink_install': True, 'test_result_base': None}
+[0.799s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_args' from command line to 'None'
+[0.799s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_target' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_clean_first' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'cmake_force_configure' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'ament_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'wheels_vel_cnt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.800s] DEBUG:colcon.colcon_core.verb:Building package 'wheels_vel_cnt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/docker_simulation_ws/build/wheels_vel_cnt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/docker_simulation_ws/install/wheels_vel_cnt', 'merge_install': False, 'path': '/home/ros/docker_simulation_ws/src/wheels_vel_cnt', 'symlink_install': True, 'test_result_base': None}
+[0.801s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.803s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.804s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs' with build type 'ament_cmake'
+[0.805s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs'
+[0.814s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.828s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/custom_interfaces' with build type 'ament_cmake'
+[0.829s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/custom_interfaces'
+[0.830s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.830s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.846s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/mulinex_description' with build type 'ament_cmake'
+[0.847s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/mulinex_description'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.860s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/docker_simulation_ws/src/mulinex_ignition_py' with build type 'ament_python'
+[0.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_ignition_py', 'ament_prefix_path')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/ament_prefix_path.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/ament_prefix_path.dsv'
+[0.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/ament_prefix_path.sh'
+[0.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs -- -j12 -l12
+[0.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/custom_interfaces -- -j12 -l12
+[0.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_description -- -j12 -l12
+[2.019s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/docker_simulation_ws/src/mulinex_ignition_py'
+[2.020s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_description -- -j12 -l12
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_description
+[2.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mulinex_description)
+[2.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_description
+[2.293s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description' for CMake module files
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description' for CMake config files
+[2.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_description', 'cmake_prefix_path')
+[2.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.ps1'
+[2.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.dsv'
+[2.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.sh'
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/bin'
+[2.304s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/lib/pkgconfig/mulinex_description.pc'
+[2.304s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/lib/python3.10/site-packages'
+[2.305s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/bin'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.ps1'
+[2.308s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.dsv'
+[2.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.sh'
+[2.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.bash'
+[2.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.zsh'
+[2.319s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/mulinex_description/share/colcon-core/packages/mulinex_description)
+[2.321s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mulinex_description)
+[2.322s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description' for CMake module files
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description' for CMake config files
+[2.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_description', 'cmake_prefix_path')
+[2.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.ps1'
+[2.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.dsv'
+[2.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/hook/cmake_prefix_path.sh'
+[2.333s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/bin'
+[2.333s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/lib/pkgconfig/mulinex_description.pc'
+[2.334s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/lib/python3.10/site-packages'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_description/bin'
+[2.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.ps1'
+[2.337s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.dsv'
+[2.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.sh'
+[2.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.bash'
+[2.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_description/share/mulinex_description/package.zsh'
+[2.344s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/mulinex_description/share/colcon-core/packages/mulinex_description)
+[2.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/mulinex_ignition' with build type 'ament_cmake'
+[2.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/mulinex_ignition'
+[2.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[2.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs -- -j12 -l12
+[2.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs
+[2.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/custom_interfaces -- -j12 -l12
+[2.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/custom_interfaces
+[2.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/mulinex_ignition -- -j12 -l12
+[2.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition
+[2.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[2.686s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces' for CMake module files
+[2.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/custom_interfaces
+[2.691s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces' for CMake config files
+[2.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[2.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[2.713s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib'
+[2.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[2.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[2.716s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/bin'
+[2.717s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[2.717s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[2.717s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/bin'
+[2.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[2.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[2.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[2.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[2.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[2.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[2.724s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[2.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces' for CMake module files
+[2.726s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces' for CMake config files
+[2.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[2.731s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib'
+[2.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[2.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[2.733s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/bin'
+[2.733s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/custom_interfaces/bin'
+[2.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[2.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[2.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[2.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[2.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[2.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi3hat_moteus_int_msgs)
+[2.746s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs' for CMake module files
+[2.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs
+[2.749s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs' for CMake config files
+[2.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi3hat_moteus_int_msgs', 'cmake_prefix_path')
+[2.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.ps1'
+[2.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.dsv'
+[2.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.sh'
+[2.753s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib'
+[2.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi3hat_moteus_int_msgs', 'ld_library_path_lib')
+[2.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.ps1'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.dsv'
+[2.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.sh'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/bin'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/pkgconfig/pi3hat_moteus_int_msgs.pc'
+[2.757s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/python3.10/site-packages'
+[2.757s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/bin'
+[2.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.ps1'
+[2.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.dsv'
+[2.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.sh'
+[2.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.bash'
+[2.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.zsh'
+[2.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/colcon-core/packages/pi3hat_moteus_int_msgs)
+[2.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi3hat_moteus_int_msgs)
+[2.765s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs' for CMake module files
+[2.766s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs' for CMake config files
+[2.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi3hat_moteus_int_msgs', 'cmake_prefix_path')
+[2.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.ps1'
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.dsv'
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/cmake_prefix_path.sh'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib'
+[2.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi3hat_moteus_int_msgs', 'ld_library_path_lib')
+[2.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.ps1'
+[2.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.dsv'
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/hook/ld_library_path_lib.sh'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/bin'
+[2.777s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/pkgconfig/pi3hat_moteus_int_msgs.pc'
+[2.777s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib/python3.10/site-packages'
+[2.778s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/bin'
+[2.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.ps1'
+[2.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.dsv'
+[2.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.sh'
+[2.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.bash'
+[2.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/pi3hat_moteus_int_msgs/package.zsh'
+[2.786s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/share/colcon-core/packages/pi3hat_moteus_int_msgs)
+[2.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mulinex_ignition)
+[2.789s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition' for CMake module files
+[2.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/mulinex_ignition
+[2.795s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition' for CMake config files
+[2.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_ignition', 'cmake_prefix_path')
+[2.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.ps1'
+[2.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.dsv'
+[2.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.sh'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/bin'
+[2.807s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib/pkgconfig/mulinex_ignition.pc'
+[2.808s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib/python3.10/site-packages'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/bin'
+[2.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.ps1'
+[2.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.sh'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.bash'
+[2.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.zsh'
+[2.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/mulinex_ignition/share/colcon-core/packages/mulinex_ignition)
+[2.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mulinex_ignition)
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition' for CMake module files
+[2.830s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition' for CMake config files
+[2.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_ignition', 'cmake_prefix_path')
+[2.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.ps1'
+[2.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.dsv'
+[2.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/hook/cmake_prefix_path.sh'
+[2.837s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib'
+[2.837s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/bin'
+[2.838s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib/pkgconfig/mulinex_ignition.pc'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/lib/python3.10/site-packages'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition/bin'
+[2.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.ps1'
+[2.843s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv'
+[2.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.sh'
+[2.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.bash'
+[2.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.zsh'
+[2.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/mulinex_ignition/share/colcon-core/packages/mulinex_ignition)
+[2.852s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control' with build type 'ament_cmake'
+[2.853s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/ik_quad_foot_control'
+[2.854s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.868s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic' with build type 'ament_cmake'
+[2.869s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/Omni_Mulinex_Joystic_OPC/omni_mulinex_joystic'
+[2.870s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.887s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller' with build type 'ament_cmake'
+[2.888s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/omni_vel_controller'
+[2.888s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.889s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.908s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/rbt_pd_cnt' with build type 'ament_cmake'
+[2.910s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/rbt_pd_cnt'
+[2.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.926s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/docker_simulation_ws/src/rlg_quad_controller' with build type 'ament_python'
+[2.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('rlg_quad_controller', 'ament_prefix_path')
+[2.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/ament_prefix_path.ps1'
+[2.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/ament_prefix_path.dsv'
+[2.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/ament_prefix_path.sh'
+[2.938s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.938s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.951s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/docker_simulation_ws/src/wheels_vel_cnt' with build type 'ament_cmake'
+[2.952s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/docker_simulation_ws/src/wheels_vel_cnt'
+[2.953s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.954s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/ik_quad_foot_control -- -j12 -l12
+[2.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/omni_mulinex_joystic': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_mulinex_joystic -- -j12 -l12
+[3.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/omni_vel_controller': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_vel_controller -- -j12 -l12
+[3.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/rbt_pd_cnt -- -j12 -l12
+[3.876s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/docker_simulation_ws/src/rlg_quad_controller'
+[3.877s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.878s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/ik_quad_foot_control -- -j12 -l12
+[3.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/ik_quad_foot_control
+[3.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/omni_vel_controller' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_vel_controller -- -j12 -l12
+[3.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/omni_vel_controller': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_vel_controller
+[3.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/rbt_pd_cnt -- -j12 -l12
+[3.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/rbt_pd_cnt
+[3.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/wheels_vel_cnt -- -j12 -l12
+[3.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/mulinex_ignition_py': PYTHONPATH=/home/ros/docker_simulation_ws/build/mulinex_ignition_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build --no-deps symlink_data
+[3.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/omni_mulinex_joystic' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/omni_mulinex_joystic -- -j12 -l12
+[3.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/omni_mulinex_joystic': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_mulinex_joystic
+[4.028s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik_quad_foot_control)
+[4.036s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control' for CMake module files
+[4.056s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control' for CMake config files
+[4.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_quad_foot_control', 'cmake_prefix_path')
+[4.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.ps1'
+[4.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.dsv'
+[4.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/ik_quad_foot_control' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/ik_quad_foot_control
+[4.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.sh'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib'
+[4.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_quad_foot_control', 'ld_library_path_lib')
+[4.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.ps1'
+[4.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.dsv'
+[4.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.sh'
+[4.117s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/bin'
+[4.118s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/pkgconfig/ik_quad_foot_control.pc'
+[4.118s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/python3.10/site-packages'
+[4.119s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/bin'
+[4.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.ps1'
+[4.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.dsv'
+[4.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.sh'
+[4.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.bash'
+[4.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.zsh'
+[4.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/colcon-core/packages/ik_quad_foot_control)
+[4.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik_quad_foot_control)
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control' for CMake module files
+[4.134s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control' for CMake config files
+[4.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_quad_foot_control', 'cmake_prefix_path')
+[4.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.ps1'
+[4.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.dsv'
+[4.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/cmake_prefix_path.sh'
+[4.141s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib'
+[4.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_quad_foot_control', 'ld_library_path_lib')
+[4.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.ps1'
+[4.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.dsv'
+[4.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/hook/ld_library_path_lib.sh'
+[4.150s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/bin'
+[4.150s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/pkgconfig/ik_quad_foot_control.pc'
+[4.151s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib/python3.10/site-packages'
+[4.152s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/bin'
+[4.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.ps1'
+[4.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.dsv'
+[4.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.sh'
+[4.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.bash'
+[4.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/ik_quad_foot_control/package.zsh'
+[4.161s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/ik_quad_foot_control/share/colcon-core/packages/ik_quad_foot_control)
+[4.165s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_vel_controller)
+[4.167s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller' for CMake module files
+[4.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/omni_vel_controller' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_vel_controller
+[4.171s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller' for CMake config files
+[4.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_vel_controller', 'cmake_prefix_path')
+[4.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.ps1'
+[4.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.dsv'
+[4.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.sh'
+[4.181s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib'
+[4.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_vel_controller', 'ld_library_path_lib')
+[4.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.ps1'
+[4.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.dsv'
+[4.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.sh'
+[4.186s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/bin'
+[4.187s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib/pkgconfig/omni_vel_controller.pc'
+[4.188s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib/python3.10/site-packages'
+[4.188s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/bin'
+[4.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.ps1'
+[4.191s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.dsv'
+[4.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.sh'
+[4.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.bash'
+[4.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.zsh'
+[4.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/omni_vel_controller/share/colcon-core/packages/omni_vel_controller)
+[4.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_vel_controller)
+[4.205s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller' for CMake module files
+[4.206s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller' for CMake config files
+[4.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_vel_controller', 'cmake_prefix_path')
+[4.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.ps1'
+[4.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.dsv'
+[4.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/cmake_prefix_path.sh'
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib'
+[4.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_vel_controller', 'ld_library_path_lib')
+[4.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.ps1'
+[4.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.dsv'
+[4.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/hook/ld_library_path_lib.sh'
+[4.222s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/bin'
+[4.222s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib/pkgconfig/omni_vel_controller.pc'
+[4.223s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/lib/python3.10/site-packages'
+[4.224s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_vel_controller/bin'
+[4.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.ps1'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.dsv'
+[4.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.sh'
+[4.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.bash'
+[4.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_vel_controller/share/omni_vel_controller/package.zsh'
+[4.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/omni_vel_controller/share/colcon-core/packages/omni_vel_controller)
+[4.246s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbt_pd_cnt)
+[4.248s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt' for CMake module files
+[4.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/rbt_pd_cnt' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/rbt_pd_cnt
+[4.255s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt' for CMake config files
+[4.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt_pd_cnt', 'cmake_prefix_path')
+[4.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.ps1'
+[4.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.dsv'
+[4.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.sh'
+[4.264s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib'
+[4.264s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt_pd_cnt', 'ld_library_path_lib')
+[4.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.ps1'
+[4.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.dsv'
+[4.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.sh'
+[4.270s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/bin'
+[4.270s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib/pkgconfig/rbt_pd_cnt.pc'
+[4.271s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib/python3.10/site-packages'
+[4.271s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/bin'
+[4.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.ps1'
+[4.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.dsv'
+[4.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.sh'
+[4.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.bash'
+[4.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.zsh'
+[4.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/colcon-core/packages/rbt_pd_cnt)
+[4.282s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbt_pd_cnt)
+[4.283s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt' for CMake module files
+[4.285s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt' for CMake config files
+[4.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt_pd_cnt', 'cmake_prefix_path')
+[4.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.ps1'
+[4.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.dsv'
+[4.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/cmake_prefix_path.sh'
+[4.292s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib'
+[4.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt_pd_cnt', 'ld_library_path_lib')
+[4.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.ps1'
+[4.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.dsv'
+[4.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/hook/ld_library_path_lib.sh'
+[4.299s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/bin'
+[4.300s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib/pkgconfig/rbt_pd_cnt.pc'
+[4.301s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib/python3.10/site-packages'
+[4.302s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/bin'
+[4.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.ps1'
+[4.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.dsv'
+[4.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.sh'
+[4.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.bash'
+[4.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/rbt_pd_cnt/package.zsh'
+[4.315s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/rbt_pd_cnt/share/colcon-core/packages/rbt_pd_cnt)
+[4.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_mulinex_joystic)
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic' for CMake module files
+[4.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/omni_mulinex_joystic' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/omni_mulinex_joystic
+[4.327s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic' for CMake config files
+[4.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_mulinex_joystic', 'cmake_prefix_path')
+[4.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.ps1'
+[4.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.dsv'
+[4.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.sh'
+[4.337s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib'
+[4.337s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_mulinex_joystic', 'ld_library_path_lib')
+[4.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.ps1'
+[4.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.dsv'
+[4.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.sh'
+[4.346s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/bin'
+[4.347s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib/pkgconfig/omni_mulinex_joystic.pc'
+[4.348s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib/python3.10/site-packages'
+[4.348s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/bin'
+[4.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.ps1'
+[4.351s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.dsv'
+[4.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.sh'
+[4.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.bash'
+[4.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.zsh'
+[4.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/colcon-core/packages/omni_mulinex_joystic)
+[4.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_mulinex_joystic)
+[4.368s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic' for CMake module files
+[4.370s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic' for CMake config files
+[4.371s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_mulinex_joystic', 'cmake_prefix_path')
+[4.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.ps1'
+[4.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.dsv'
+[4.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/cmake_prefix_path.sh'
+[4.380s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib'
+[4.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_mulinex_joystic', 'ld_library_path_lib')
+[4.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.ps1'
+[4.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.dsv'
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/hook/ld_library_path_lib.sh'
+[4.387s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/bin'
+[4.387s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib/pkgconfig/omni_mulinex_joystic.pc'
+[4.388s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib/python3.10/site-packages'
+[4.389s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/bin'
+[4.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.ps1'
+[4.392s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.dsv'
+[4.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.sh'
+[4.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.bash'
+[4.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/omni_mulinex_joystic/package.zsh'
+[4.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/share/colcon-core/packages/omni_mulinex_joystic)
+[4.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/wheels_vel_cnt -- -j12 -l12
+[4.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/wheels_vel_cnt
+[4.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wheels_vel_cnt)
+[4.523s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt' for CMake module files
+[4.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/wheels_vel_cnt' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/custom_interfaces:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/wheels_vel_cnt
+[4.527s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt' for CMake config files
+[4.529s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheels_vel_cnt', 'cmake_prefix_path')
+[4.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.ps1'
+[4.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.dsv'
+[4.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.sh'
+[4.545s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib'
+[4.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheels_vel_cnt', 'ld_library_path_lib')
+[4.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.ps1'
+[4.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.dsv'
+[4.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.sh'
+[4.559s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/bin'
+[4.559s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/pkgconfig/wheels_vel_cnt.pc'
+[4.560s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/python3.10/site-packages'
+[4.561s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/bin'
+[4.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.ps1'
+[4.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.dsv'
+[4.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.sh'
+[4.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.bash'
+[4.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.zsh'
+[4.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/colcon-core/packages/wheels_vel_cnt)
+[4.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wheels_vel_cnt)
+[4.589s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt' for CMake module files
+[4.592s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt' for CMake config files
+[4.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheels_vel_cnt', 'cmake_prefix_path')
+[4.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.ps1'
+[4.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.dsv'
+[4.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/cmake_prefix_path.sh'
+[4.612s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib'
+[4.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheels_vel_cnt', 'ld_library_path_lib')
+[4.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.ps1'
+[4.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.dsv'
+[4.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/hook/ld_library_path_lib.sh'
+[4.628s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/bin'
+[4.629s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/pkgconfig/wheels_vel_cnt.pc'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib/python3.10/site-packages'
+[4.631s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/bin'
+[4.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.ps1'
+[4.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.dsv'
+[4.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.sh'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.bash'
+[4.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/wheels_vel_cnt/package.zsh'
+[4.660s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/wheels_vel_cnt/share/colcon-core/packages/wheels_vel_cnt)
+[5.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/docker_simulation_ws/build/rlg_quad_controller': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/build/rlg_quad_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/rlg_quad_controller/build --no-deps symlink_data
+[6.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_ignition_py', 'pythonpath_develop')
+[6.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/build/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath_develop.ps1'
+[6.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/mulinex_ignition_py' returned '0': PYTHONPATH=/home/ros/docker_simulation_ws/build/mulinex_ignition_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build --no-deps symlink_data
+[6.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/build/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath_develop.dsv'
+[6.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/build/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath_develop.sh'
+[6.193s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py' for CMake module files
+[6.198s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py' for CMake config files
+[6.200s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib'
+[6.201s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/bin'
+[6.201s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/pkgconfig/mulinex_ignition_py.pc'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages'
+[6.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('mulinex_ignition_py', 'pythonpath')
+[6.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath.ps1'
+[6.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath.dsv'
+[6.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/hook/pythonpath.sh'
+[6.208s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/bin'
+[6.208s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mulinex_ignition_py)
+[6.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/package.ps1'
+[6.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/package.dsv'
+[6.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/package.sh'
+[6.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/package.bash'
+[6.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/mulinex_ignition_py/package.zsh'
+[6.223s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/mulinex_ignition_py/share/colcon-core/packages/mulinex_ignition_py)
+[7.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('rlg_quad_controller', 'pythonpath_develop')
+[7.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/build/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath_develop.ps1'
+[7.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/docker_simulation_ws/build/rlg_quad_controller' returned '0': CMAKE_PREFIX_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs:/home/ros/docker_simulation_ws/install/wheels_vel_cnt:/home/ros/docker_simulation_ws/install/rbt_pd_cnt:/home/ros/docker_simulation_ws/install/omni_vel_controller:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic:/home/ros/docker_simulation_ws/install/ik_quad_foot_control:/home/ros/docker_simulation_ws/install/mulinex_ignition:/home/ros/docker_simulation_ws/install/mulinex_description:/home/ros/docker_simulation_ws/install/custom_interfaces LD_LIBRARY_PATH=/home/ros/docker_simulation_ws/install/pi3hat_moteus_int_msgs/lib:/home/ros/docker_simulation_ws/install/wheels_vel_cnt/lib:/home/ros/docker_simulation_ws/install/rbt_pd_cnt/lib:/home/ros/docker_simulation_ws/install/omni_vel_controller/lib:/home/ros/docker_simulation_ws/install/omni_mulinex_joystic/lib:/home/ros/docker_simulation_ws/install/ik_quad_foot_control/lib:/home/ros/docker_simulation_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/ros/docker_simulation_ws/build/rlg_quad_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/docker_simulation_ws/build/rlg_quad_controller/build --no-deps symlink_data
+[7.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/build/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath_develop.dsv'
+[7.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/build/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath_develop.sh'
+[7.567s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller' for CMake module files
+[7.568s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller' for CMake config files
+[7.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib'
+[7.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller/bin'
+[7.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/pkgconfig/rlg_quad_controller.pc'
+[7.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages'
+[7.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('rlg_quad_controller', 'pythonpath')
+[7.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath.ps1'
+[7.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath.dsv'
+[7.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/hook/pythonpath.sh'
+[7.573s] Level 1:colcon.colcon_core.environment:checking '/home/ros/docker_simulation_ws/install/rlg_quad_controller/bin'
+[7.574s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rlg_quad_controller)
+[7.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/package.ps1'
+[7.577s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/package.dsv'
+[7.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/package.sh'
+[7.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/package.bash'
+[7.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/package.zsh'
+[7.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/docker_simulation_ws/install/rlg_quad_controller/share/colcon-core/packages/rlg_quad_controller)
+[7.584s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.586s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.605s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.605s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.606s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.606s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.613s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[7.614s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/docker_simulation_ws/install/local_setup.ps1'
+[7.620s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/docker_simulation_ws/install/_local_setup_util_ps1.py'
+[7.625s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/docker_simulation_ws/install/setup.ps1'
+[7.630s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/docker_simulation_ws/install/local_setup.sh'
+[7.633s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/docker_simulation_ws/install/_local_setup_util_sh.py'
+[7.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/docker_simulation_ws/install/setup.sh'
+[7.639s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/docker_simulation_ws/install/local_setup.bash'
+[7.641s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/docker_simulation_ws/install/setup.bash'
+[7.645s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/docker_simulation_ws/install/local_setup.zsh'
+[7.648s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/docker_simulation_ws/install/setup.zsh'

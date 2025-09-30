@@ -33,23 +33,6 @@ void custom_interfaces__msg__WheelVelocityCommand__rosidl_typesupport_introspect
 
 static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__WheelVelocityCommand__rosidl_typesupport_introspection_c__WheelVelocityCommand_message_member_array[4] = {
   {
-    "v_rf",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_rf),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
     "v_lf",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
@@ -67,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "v_rb",  // name
+    "v_lb",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_rb),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_lb),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -84,14 +67,31 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "v_lb",  // name
+    "v_rf",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_lb),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_rf),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "v_rb",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__WheelVelocityCommand, v_rb),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

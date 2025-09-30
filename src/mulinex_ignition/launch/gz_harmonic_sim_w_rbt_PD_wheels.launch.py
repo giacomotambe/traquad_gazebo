@@ -53,7 +53,7 @@ def generate_launch_description():
 
     robot_xacro_arg = DeclareLaunchArgument(
                 "robot_xacro",
-                default_value="mul_ignition.xacro",
+                default_value="traquad.xacro",
                 description="Xacro File describe the spawing robot",
             )
     

@@ -25,13 +25,6 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: v_rf
-  {
-    out << "v_rf: ";
-    rosidl_generator_traits::value_to_yaml(msg.v_rf, out);
-    out << ", ";
-  }
-
   // member: v_lf
   {
     out << "v_lf: ";
@@ -39,17 +32,24 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: v_rb
-  {
-    out << "v_rb: ";
-    rosidl_generator_traits::value_to_yaml(msg.v_rb, out);
-    out << ", ";
-  }
-
   // member: v_lb
   {
     out << "v_lb: ";
     rosidl_generator_traits::value_to_yaml(msg.v_lb, out);
+    out << ", ";
+  }
+
+  // member: v_rf
+  {
+    out << "v_rf: ";
+    rosidl_generator_traits::value_to_yaml(msg.v_rf, out);
+    out << ", ";
+  }
+
+  // member: v_rb
+  {
+    out << "v_rb: ";
+    rosidl_generator_traits::value_to_yaml(msg.v_rb, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -58,16 +58,6 @@ inline void to_block_style_yaml(
   const WheelVelocityCommand & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: v_rf
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "v_rf: ";
-    rosidl_generator_traits::value_to_yaml(msg.v_rf, out);
-    out << "\n";
-  }
-
   // member: v_lf
   {
     if (indentation > 0) {
@@ -78,16 +68,6 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: v_rb
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "v_rb: ";
-    rosidl_generator_traits::value_to_yaml(msg.v_rb, out);
-    out << "\n";
-  }
-
   // member: v_lb
   {
     if (indentation > 0) {
@@ -95,6 +75,26 @@ inline void to_block_style_yaml(
     }
     out << "v_lb: ";
     rosidl_generator_traits::value_to_yaml(msg.v_lb, out);
+    out << "\n";
+  }
+
+  // member: v_rf
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "v_rf: ";
+    rosidl_generator_traits::value_to_yaml(msg.v_rf, out);
+    out << "\n";
+  }
+
+  // member: v_rb
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "v_rb: ";
+    rosidl_generator_traits::value_to_yaml(msg.v_rb, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

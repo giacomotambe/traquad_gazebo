@@ -57,17 +57,17 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
     """Message class 'WheelVelocityCommand'."""
 
     __slots__ = [
-        '_v_rf',
         '_v_lf',
-        '_v_rb',
         '_v_lb',
+        '_v_rf',
+        '_v_rb',
     ]
 
     _fields_and_field_types = {
-        'v_rf': 'double',
         'v_lf': 'double',
-        'v_rb': 'double',
         'v_lb': 'double',
+        'v_rf': 'double',
+        'v_rb': 'double',
     }
 
     SLOT_TYPES = (
@@ -81,10 +81,10 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.v_rf = kwargs.get('v_rf', float())
         self.v_lf = kwargs.get('v_lf', float())
-        self.v_rb = kwargs.get('v_rb', float())
         self.v_lb = kwargs.get('v_lb', float())
+        self.v_rf = kwargs.get('v_rf', float())
+        self.v_rb = kwargs.get('v_rb', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -115,13 +115,13 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.v_rf != other.v_rf:
-            return False
         if self.v_lf != other.v_lf:
             return False
-        if self.v_rb != other.v_rb:
-            return False
         if self.v_lb != other.v_lb:
+            return False
+        if self.v_rf != other.v_rf:
+            return False
+        if self.v_rb != other.v_rb:
             return False
         return True
 
@@ -129,21 +129,6 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
-
-    @builtins.property
-    def v_rf(self):
-        """Message field 'v_rf'."""
-        return self._v_rf
-
-    @v_rf.setter
-    def v_rf(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'v_rf' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'v_rf' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._v_rf = value
 
     @builtins.property
     def v_lf(self):
@@ -161,21 +146,6 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
         self._v_lf = value
 
     @builtins.property
-    def v_rb(self):
-        """Message field 'v_rb'."""
-        return self._v_rb
-
-    @v_rb.setter
-    def v_rb(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'v_rb' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'v_rb' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._v_rb = value
-
-    @builtins.property
     def v_lb(self):
         """Message field 'v_lb'."""
         return self._v_lb
@@ -189,3 +159,33 @@ class WheelVelocityCommand(metaclass=Metaclass_WheelVelocityCommand):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'v_lb' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._v_lb = value
+
+    @builtins.property
+    def v_rf(self):
+        """Message field 'v_rf'."""
+        return self._v_rf
+
+    @v_rf.setter
+    def v_rf(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'v_rf' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'v_rf' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._v_rf = value
+
+    @builtins.property
+    def v_rb(self):
+        """Message field 'v_rb'."""
+        return self._v_rb
+
+    @v_rb.setter
+    def v_rb(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'v_rb' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'v_rb' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._v_rb = value

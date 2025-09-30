@@ -46,7 +46,7 @@
       <parent link="${parent}"/>
       <child link="${name}"/>
       <axis xyz="0 0 1"/>
-      <limit effort="10" velocity="10"/>
+      <limit effort="10" velocity="100000"/>
     </joint>
   </xacro:macro>
   
@@ -57,7 +57,7 @@
       <parent link="${parent}"/>
       <child link="${name}"/>
       <axis xyz="1 0 0"/>
-      <limit effort="10" velocity="10" lower="-0.785398" upper="0.785398"/>
+      <limit effort="10" velocity="10" lower="-3.14159" upper="3.14159"/>
     </joint>
 
     <link name="${name}">

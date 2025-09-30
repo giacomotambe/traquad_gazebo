@@ -17,10 +17,10 @@ custom_interfaces__msg__WheelVelocityCommand__init(custom_interfaces__msg__Wheel
   if (!msg) {
     return false;
   }
-  // v_rf
   // v_lf
-  // v_rb
   // v_lb
+  // v_rf
+  // v_rb
   return true;
 }
 
@@ -30,10 +30,10 @@ custom_interfaces__msg__WheelVelocityCommand__fini(custom_interfaces__msg__Wheel
   if (!msg) {
     return;
   }
-  // v_rf
   // v_lf
-  // v_rb
   // v_lb
+  // v_rf
+  // v_rb
 }
 
 bool
@@ -42,20 +42,20 @@ custom_interfaces__msg__WheelVelocityCommand__are_equal(const custom_interfaces_
   if (!lhs || !rhs) {
     return false;
   }
-  // v_rf
-  if (lhs->v_rf != rhs->v_rf) {
-    return false;
-  }
   // v_lf
   if (lhs->v_lf != rhs->v_lf) {
     return false;
   }
-  // v_rb
-  if (lhs->v_rb != rhs->v_rb) {
-    return false;
-  }
   // v_lb
   if (lhs->v_lb != rhs->v_lb) {
+    return false;
+  }
+  // v_rf
+  if (lhs->v_rf != rhs->v_rf) {
+    return false;
+  }
+  // v_rb
+  if (lhs->v_rb != rhs->v_rb) {
     return false;
   }
   return true;
@@ -69,14 +69,14 @@ custom_interfaces__msg__WheelVelocityCommand__copy(
   if (!input || !output) {
     return false;
   }
-  // v_rf
-  output->v_rf = input->v_rf;
   // v_lf
   output->v_lf = input->v_lf;
-  // v_rb
-  output->v_rb = input->v_rb;
   // v_lb
   output->v_lb = input->v_lb;
+  // v_rf
+  output->v_rf = input->v_rf;
+  // v_rb
+  output->v_rb = input->v_rb;
   return true;
 }
 

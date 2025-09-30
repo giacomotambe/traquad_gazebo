@@ -38,10 +38,10 @@ struct WheelVelocityCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->v_rf = 0.0;
       this->v_lf = 0.0;
-      this->v_rb = 0.0;
       this->v_lb = 0.0;
+      this->v_rf = 0.0;
+      this->v_rb = 0.0;
     }
   }
 
@@ -51,50 +51,50 @@ struct WheelVelocityCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->v_rf = 0.0;
       this->v_lf = 0.0;
-      this->v_rb = 0.0;
       this->v_lb = 0.0;
+      this->v_rf = 0.0;
+      this->v_rb = 0.0;
     }
   }
 
   // field types and members
-  using _v_rf_type =
-    double;
-  _v_rf_type v_rf;
   using _v_lf_type =
     double;
   _v_lf_type v_lf;
-  using _v_rb_type =
-    double;
-  _v_rb_type v_rb;
   using _v_lb_type =
     double;
   _v_lb_type v_lb;
+  using _v_rf_type =
+    double;
+  _v_rf_type v_rf;
+  using _v_rb_type =
+    double;
+  _v_rb_type v_rb;
 
   // setters for named parameter idiom
-  Type & set__v_rf(
-    const double & _arg)
-  {
-    this->v_rf = _arg;
-    return *this;
-  }
   Type & set__v_lf(
     const double & _arg)
   {
     this->v_lf = _arg;
     return *this;
   }
-  Type & set__v_rb(
-    const double & _arg)
-  {
-    this->v_rb = _arg;
-    return *this;
-  }
   Type & set__v_lb(
     const double & _arg)
   {
     this->v_lb = _arg;
+    return *this;
+  }
+  Type & set__v_rf(
+    const double & _arg)
+  {
+    this->v_rf = _arg;
+    return *this;
+  }
+  Type & set__v_rb(
+    const double & _arg)
+  {
+    this->v_rb = _arg;
     return *this;
   }
 
@@ -140,16 +140,16 @@ struct WheelVelocityCommand_
   // comparison operators
   bool operator==(const WheelVelocityCommand_ & other) const
   {
-    if (this->v_rf != other.v_rf) {
-      return false;
-    }
     if (this->v_lf != other.v_lf) {
       return false;
     }
-    if (this->v_rb != other.v_rb) {
+    if (this->v_lb != other.v_lb) {
       return false;
     }
-    if (this->v_lb != other.v_lb) {
+    if (this->v_rf != other.v_rf) {
+      return false;
+    }
+    if (this->v_rb != other.v_rb) {
       return false;
     }
     return true;

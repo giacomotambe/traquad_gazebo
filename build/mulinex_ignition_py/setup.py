@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/src/mulinex_ignition_py/setup.py

@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/dependency_links.txt
+writing entry points to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/entry_points.txt
+writing requirements to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/requires.txt
+writing top-level names to ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/top_level.txt
+reading manifest file '../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mulinex_ignition_py/move_wheels_2.py -> /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py
+running install
+running install_lib
+copying /home/ros/docker_simulation_ws/build/mulinex_ignition_py/build/lib/mulinex_ignition_py/move_wheels_2.py -> /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py
+byte-compiling /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py/move_wheels_2.py to move_wheels_2.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mulinex_ignition_py/mulinex_ignition_py.egg-info to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/python3.10/site-packages/mulinex_ignition_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bridge_node script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing getup_omni_1 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing gostraighton script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_pd script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing move_wheels_2 script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+Installing walking script to /home/ros/docker_simulation_ws/install/mulinex_ignition_py/lib/mulinex_ignition_py
+writing list of installed files to '/home/ros/docker_simulation_ws/build/mulinex_ignition_py/install.log'

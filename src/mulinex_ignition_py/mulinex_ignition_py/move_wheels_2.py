@@ -16,10 +16,10 @@ class WheelsVelCommander(Node):
         super().__init__('wheels_vel_commander')
 
         # Parametri
-        self.declare_parameter('v_rf', 10.0)
-        self.declare_parameter('v_lf', -10.0)
-        self.declare_parameter('v_rb', -10.0)
-        self.declare_parameter('v_lb', 10.0)
+        self.declare_parameter('v_lf', -67.0)
+        self.declare_parameter('v_lb', -67.0)
+        self.declare_parameter('v_rf', 67.0)
+        self.declare_parameter('v_rb', 67.0)
         self.declare_parameter('publish_rate', 10)
 
         self.v_rf = self.get_parameter('v_rf').get_parameter_value().double_value
@@ -54,19 +54,16 @@ class WheelsVelCommander(Node):
                 self.get_logger().info('Homing succeeded')
 
         # Timer
-        self.start_time = self.get_clock().now()
-        self.timeout_duration = Duration(seconds=10.0)
         self.timer = self.create_timer(1.0 / self.rate_hz, self.publish_cmd)
 
     def publish_cmd(self):
-        now = self.get_clock().now()
-        timeout = (now - self.start_time) > self.timeout_duration
 
         msg = WheelVelocityCommand()
-        msg.v_rf = 0.0 if timeout else self.v_rf
-        msg.v_lf = 0.0 if timeout else self.v_lf
-        msg.v_rb = 0.0 if timeout else self.v_rb
-        msg.v_lb = 0.0 if timeout else self.v_lb
+        
+        msg.v_lf = self.v_lf
+        msg.v_lb = self.v_lb
+        msg.v_rf = self.v_rf
+        msg.v_rb = self.v_rb
 
         self.publisher.publish(msg)
 

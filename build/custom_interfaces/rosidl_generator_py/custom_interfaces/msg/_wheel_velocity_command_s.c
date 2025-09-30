@@ -50,15 +50,6 @@ bool custom_interfaces__msg__wheel_velocity_command__convert_from_py(PyObject * 
     assert(strncmp("custom_interfaces.msg._wheel_velocity_command.WheelVelocityCommand", full_classname_dest, 66) == 0);
   }
   custom_interfaces__msg__WheelVelocityCommand * ros_message = _ros_message;
-  {  // v_rf
-    PyObject * field = PyObject_GetAttrString(_pymsg, "v_rf");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->v_rf = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // v_lf
     PyObject * field = PyObject_GetAttrString(_pymsg, "v_lf");
     if (!field) {
@@ -68,15 +59,6 @@ bool custom_interfaces__msg__wheel_velocity_command__convert_from_py(PyObject * 
     ros_message->v_lf = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // v_rb
-    PyObject * field = PyObject_GetAttrString(_pymsg, "v_rb");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->v_rb = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // v_lb
     PyObject * field = PyObject_GetAttrString(_pymsg, "v_lb");
     if (!field) {
@@ -84,6 +66,24 @@ bool custom_interfaces__msg__wheel_velocity_command__convert_from_py(PyObject * 
     }
     assert(PyFloat_Check(field));
     ros_message->v_lb = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // v_rf
+    PyObject * field = PyObject_GetAttrString(_pymsg, "v_rf");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->v_rf = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // v_rb
+    PyObject * field = PyObject_GetAttrString(_pymsg, "v_rb");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->v_rb = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -108,17 +108,6 @@ PyObject * custom_interfaces__msg__wheel_velocity_command__convert_to_py(void * 
     }
   }
   custom_interfaces__msg__WheelVelocityCommand * ros_message = (custom_interfaces__msg__WheelVelocityCommand *)raw_ros_message;
-  {  // v_rf
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->v_rf);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "v_rf", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // v_lf
     PyObject * field = NULL;
     field = PyFloat_FromDouble(ros_message->v_lf);
@@ -130,22 +119,33 @@ PyObject * custom_interfaces__msg__wheel_velocity_command__convert_to_py(void * 
       }
     }
   }
-  {  // v_rb
+  {  // v_lb
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->v_rb);
+    field = PyFloat_FromDouble(ros_message->v_lb);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "v_rb", field);
+      int rc = PyObject_SetAttrString(_pymessage, "v_lb", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // v_lb
+  {  // v_rf
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->v_lb);
+    field = PyFloat_FromDouble(ros_message->v_rf);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "v_lb", field);
+      int rc = PyObject_SetAttrString(_pymessage, "v_rf", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // v_rb
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->v_rb);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "v_rb", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

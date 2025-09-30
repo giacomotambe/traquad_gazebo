@@ -32,14 +32,14 @@ cdr_serialize(
   const custom_interfaces::msg::WheelVelocityCommand & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: v_rf
-  cdr << ros_message.v_rf;
   // Member: v_lf
   cdr << ros_message.v_lf;
-  // Member: v_rb
-  cdr << ros_message.v_rb;
   // Member: v_lb
   cdr << ros_message.v_lb;
+  // Member: v_rf
+  cdr << ros_message.v_rf;
+  // Member: v_rb
+  cdr << ros_message.v_rb;
   return true;
 }
 
@@ -49,17 +49,17 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   custom_interfaces::msg::WheelVelocityCommand & ros_message)
 {
-  // Member: v_rf
-  cdr >> ros_message.v_rf;
-
   // Member: v_lf
   cdr >> ros_message.v_lf;
 
-  // Member: v_rb
-  cdr >> ros_message.v_rb;
-
   // Member: v_lb
   cdr >> ros_message.v_lb;
+
+  // Member: v_rf
+  cdr >> ros_message.v_rf;
+
+  // Member: v_rb
+  cdr >> ros_message.v_rb;
 
   return true;
 }
@@ -77,27 +77,27 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: v_rf
-  {
-    size_t item_size = sizeof(ros_message.v_rf);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: v_lf
   {
     size_t item_size = sizeof(ros_message.v_lf);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: v_rb
-  {
-    size_t item_size = sizeof(ros_message.v_rb);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: v_lb
   {
     size_t item_size = sizeof(ros_message.v_lb);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: v_rf
+  {
+    size_t item_size = sizeof(ros_message.v_rf);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: v_rb
+  {
+    size_t item_size = sizeof(ros_message.v_rb);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -125,25 +125,7 @@ max_serialized_size_WheelVelocityCommand(
   is_plain = true;
 
 
-  // Member: v_rf
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
   // Member: v_lf
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: v_rb
   {
     size_t array_size = 1;
 
@@ -161,6 +143,24 @@ max_serialized_size_WheelVelocityCommand(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
+  // Member: v_rf
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: v_rb
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -169,7 +169,7 @@ max_serialized_size_WheelVelocityCommand(
     using DataType = custom_interfaces::msg::WheelVelocityCommand;
     is_plain =
       (
-      offsetof(DataType, v_lb) +
+      offsetof(DataType, v_rb) +
       last_member_size
       ) == ret_val;
   }

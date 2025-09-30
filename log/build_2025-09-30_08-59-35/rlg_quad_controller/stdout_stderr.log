@@ -1,0 +1,75 @@
+running develop
+Removing /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg-quad-controller.egg-link (link to .)
+running egg_info
+writing ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/entry_points.txt
+writing requirements to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/requires.txt
+writing top-level names to ../../build/rlg_quad_controller/rlg_quad_controller.egg-info/top_level.txt
+reading manifest file '../../build/rlg_quad_controller/rlg_quad_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/rlg_quad_controller/rlg_quad_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rlg_quad_controller/inference_controller_robot.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/inference_controller_sim.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/inference_controller_simulation.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/trajectory_publisher.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/force_measure.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/inference_francesco.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/__init__.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller
+copying rlg_quad_controller/utils/torch_utils.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils
+copying rlg_quad_controller/utils/rlg_utils.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils
+copying rlg_quad_controller/utils/__init__.py -> /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils
+running install
+running install_lib
+creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/inference_controller_robot.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/inference_controller_sim.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+creating /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils/torch_utils.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils/rlg_utils.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/utils/__init__.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/inference_controller_simulation.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/trajectory_publisher.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/force_measure.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/inference_francesco.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+copying /home/ros/docker_simulation_ws/build/rlg_quad_controller/build/lib/rlg_quad_controller/__init__.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/inference_controller_robot.py to inference_controller_robot.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/inference_controller_sim.py to inference_controller_sim.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils/torch_utils.py to torch_utils.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils/rlg_utils.py to rlg_utils.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/utils/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/inference_controller_simulation.py to inference_controller_simulation.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/trajectory_publisher.py to trajectory_publisher.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/force_measure.py to force_measure.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/inference_francesco.py to inference_francesco.cpython-310.pyc
+byte-compiling /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/rlg_quad_controller -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller
+copying launch/omniquad_inference_robot.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+copying launch/omniquad_inference_sim.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch
+copying config/mulinex_simulation_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+copying config/mulinex_simulation_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+copying config/mulinex_config_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+copying config/mulinex_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config
+copying models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+copying models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+copying models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models
+copying models/omni_flat_v1/omniquad_flat.pth -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+copying models/omni_flat_v1/agent.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+copying models/omni_flat_v1/env.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/models/omni_flat_v1
+copying launch/omniquad_inference_robot.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch/
+copying launch/omniquad_inference_sim.launch.py -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/launch/
+copying config/mulinex_simulation_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+copying config/mulinex_simulation_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+copying config/mulinex_config_feedforward.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+copying config/mulinex_config.yaml -> /home/ros/docker_simulation_ws/install/rlg_quad_controller/share/rlg_quad_controller/config/
+running install_egg_info
+Copying ../../build/rlg_quad_controller/rlg_quad_controller.egg-info to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/python3.10/site-packages/rlg_quad_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing force_measure script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_robot script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing inference_controller_sim script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+Installing trajectory_publisher script to /home/ros/docker_simulation_ws/install/rlg_quad_controller/lib/rlg_quad_controller
+writing list of installed files to '/home/ros/docker_simulation_ws/build/rlg_quad_controller/install.log'

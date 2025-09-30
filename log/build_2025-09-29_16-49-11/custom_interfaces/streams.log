@@ -1,0 +1,120 @@
+[0.152s] Invoking command in '/home/ros/docker_simulation_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/custom_interfaces -- -j12 -l12
+[0.602s] [  3%] Built target custom_interfaces__cpp
+[0.626s] [ 12%] Built target custom_interfaces__rosidl_generator_c
+[0.630s] [ 12%] Built target ament_cmake_python_symlink_custom_interfaces
+[0.867s] [ 22%] Built target custom_interfaces__rosidl_typesupport_c
+[0.868s] [ 32%] Built target custom_interfaces__rosidl_typesupport_cpp
+[0.874s] [ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.896s] [ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[0.900s] [ 61%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.912s] [ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[1.020s] [ 70%] Built target custom_interfaces
+[1.127s] [ 74%] Built target custom_interfaces__py
+[1.351s] [ 80%] Built target custom_interfaces__rosidl_generator_py
+[1.544s] [ 87%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[1.548s] [ 96%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.561s] [100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.726s] running egg_info
+[2.735s] writing custom_interfaces.egg-info/PKG-INFO
+[2.738s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[2.739s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[2.757s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[2.772s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[2.980s] [100%] Built target ament_cmake_python_build_custom_interfaces_egg
+[3.056s] Invoked command in '/home/ros/docker_simulation_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --build /home/ros/docker_simulation_ws/build/custom_interfaces -- -j12 -l12
+[3.089s] Invoking command in '/home/ros/docker_simulation_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/custom_interfaces
+[3.134s] -- Install configuration: ""
+[3.134s] -- Execute custom install script
+[3.135s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
+[3.137s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__functions.h
+[3.138s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__struct.h
+[3.139s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__type_support.h
+[3.146s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.148s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/wheel_velocity_command.h
+[3.149s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh
+[3.149s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv
+[3.150s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__rosidl_typesupport_fastrtps_c.h
+[3.151s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.153s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__builder.hpp
+[3.154s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__struct.hpp
+[3.154s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__traits.hpp
+[3.160s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__type_support.hpp
+[3.160s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.166s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/wheel_velocity_command.hpp
+[3.166s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.167s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.168s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__rosidl_typesupport_introspection_c.h
+[3.173s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.174s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/wheel_velocity_command__rosidl_typesupport_introspection_cpp.hpp
+[3.175s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh
+[3.175s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv
+[3.175s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.206s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.211s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.214s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.215s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py
+[3.216s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[3.217s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.218s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.218s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.219s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.219s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.225s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so
+[3.227s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py
+[3.227s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_wheel_velocity_command.py
+[3.228s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_wheel_velocity_command_s.c
+[3.235s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.241s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.241s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.242s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/msg/WheelVelocityCommand.idl
+[3.242s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/msg/WheelVelocityCommand.msg
+[3.242s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
+[3.242s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
+[3.243s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh
+[3.246s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv
+[3.247s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh
+[3.247s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv
+[3.247s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash
+[3.256s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh
+[3.257s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh
+[3.257s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv
+[3.259s] -- Symlinking: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.dsv
+[3.305s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces
+[3.306s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.308s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.309s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.309s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.311s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.323s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.324s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.325s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake
+[3.325s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake
+[3.326s] -- Up-to-date symlink: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/package.xml
+[3.327s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+[3.327s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.328s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.329s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+[3.363s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+[3.368s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.372s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+[3.652s] Listing '/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...
+[3.652s] Listing '/home/ros/docker_simulation_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...
+[3.672s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+[3.674s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake
+[3.674s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.675s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.677s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.678s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake
+[3.687s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.688s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.689s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.689s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.690s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake
+[3.690s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.690s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.691s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.691s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake
+[3.695s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.696s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake
+[3.696s] -- Up-to-date: /home/ros/docker_simulation_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.706s] Invoked command in '/home/ros/docker_simulation_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/docker_simulation_ws/install/rlg_quad_controller:/home/ros/docker_simulation_ws/install/mulinex_ignition_py:/opt/ros/humble /usr/bin/cmake --install /home/ros/docker_simulation_ws/build/custom_interfaces

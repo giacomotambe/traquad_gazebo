@@ -1,0 +1,35 @@
+[ 33%] Built target move_wheels
+[ 66%] Built target gt_odom_pub
+[100%] Built target getup_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/gt_odom_pub
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/move_wheels
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/lib/mulinex_ignition/getup_node
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt.launch.py
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PD_wheels.launch.py
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/gz_harmonic_sim_w_rbt_PDonly.launch.py
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/launch/test_lidar.launch.py
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/mulinex_mf.yaml
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/config/omnicar.yaml
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/empty.sdf
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/world/turtle_arena.sdf
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/hexagon.dae
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/meshes/wall.dae
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.config
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/models/TurtlebotArena/model.sdf
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/package_run_dependencies/mulinex_ignition
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/parent_prefix_path/mulinex_ignition
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/environment/path.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.bash
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.sh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.zsh
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/local_setup.dsv
+-- Symlinking: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.dsv
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/ament_index/resource_index/packages/mulinex_ignition
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/cmake/mulinex_ignitionConfig-version.cmake
+-- Up-to-date symlink: /home/ros/docker_simulation_ws/install/mulinex_ignition/share/mulinex_ignition/package.xml

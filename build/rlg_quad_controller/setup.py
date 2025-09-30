@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/src/rlg_quad_controller/setup.py
