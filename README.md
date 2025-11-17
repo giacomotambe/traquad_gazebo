@@ -109,7 +109,7 @@ The keyboard to control the robot
 
 #### TERMINAL 3:
 The inference node
-``` ros2 launch rlg_quad_controller omniquad_inference.launch.py ```
+``` ros2 launch rlg_quad_controller omniquad_inference_robot.launch.py ```
 
 ## USEFUL COMMANDS
 - ``` ros2 run rqt_graph rqt_graph ``` shows a graph with all the nodes and all the topics and who writes where
