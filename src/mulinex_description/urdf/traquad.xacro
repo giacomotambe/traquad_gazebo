@@ -137,31 +137,7 @@
         simplify_meshes="$(arg simplify_meshes_lower_leg)"
         feet_type="$(arg feet_type)" 
         />
-    <xacro:body_left  name="LH" parent="LH_UPPER_LEG" xyz="-0.19 0.05 0" rpy="1.5708 0 1.5708"/>
-    <xacro:body_left  name="LF" parent="LF_UPPER_LEG" xyz="0.19 0.05 0" rpy="-1.5708 0 1.5708"/>
-    <xacro:body_right name="RF" parent="RF_UPPER_LEG" xyz="0.19 -0.05 0" rpy="3.14159 0 1.5708"/>
-    <xacro:body_right name="RH" parent="RH_UPPER_LEG" xyz="-0.19 -0.05 0" rpy="0 0 1.5708"/>
-
-    <!-- Wheels for each body (4 per leg) -->
-    <xacro:wheel name="wheel_1_LH" parent="LH" xyz="0 0.0484 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_2_LH" parent="LH" xyz="0 1.07779e-16 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_3_LH" parent="LH" xyz="0 -0.05103 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_4_LH" parent="LH" xyz="0 -0.07668 -0.0417" rpy="-6.12323e-17 -1.5708 0"/>
-
-    <xacro:wheel name="wheel_1_LF" parent="LF" xyz="0 0.0484 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_2_LF" parent="LF" xyz="0 1.07779e-16 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_3_LF" parent="LF" xyz="0 -0.05103 -0.0584" rpy="-6.12323e-17 -1.5708 0"/>
-    <xacro:wheel name="wheel_4_LF" parent="LF" xyz="0 -0.07668 -0.0417" rpy="-6.12323e-17 -1.5708 0"/>
-
-    <xacro:wheel name="wheel_1_RF" parent="RF" xyz="2.08167e-17 0.05838 0.04841" rpy="-1.5708 0.992087 -1.5708"/>
-    <xacro:wheel name="wheel_2_RF" parent="RF" xyz="0 0.05838 1.10544e-16" rpy="-1.5708 0.967866 -1.5708"/>
-    <xacro:wheel name="wheel_3_RF" parent="RF" xyz="-2.08167e-17 0.05838 -0.05103" rpy="-1.5708 0.967866 -1.5708"/>
-    <xacro:wheel name="wheel_4_RF" parent="RF" xyz="-3.46945e-17 0.04174 -0.07668" rpy="-1.5708 0.992087 -1.5708"/>
-
-    <xacro:wheel name="wheel_1_RH" parent="RH" xyz="2.08167e-17 0.05838 0.04841" rpy="-1.5708 0.992087 -1.5708"/>
-    <xacro:wheel name="wheel_2_RH" parent="RH" xyz="0 0.05838 1.10544e-16" rpy="-1.5708 0.967866 -1.5708"/>
-    <xacro:wheel name="wheel_3_RH" parent="RH" xyz="-2.08167e-17 0.05838 -0.05103" rpy="-1.5708 0.967866 -1.5708"/>
-    <xacro:wheel name="wheel_4_RH" parent="RH" xyz="-3.46945e-17 0.04174 -0.07668" rpy="-1.5708 0.992087 -1.5708"/>
+    <!-- Track bodies and wheels are instantiated in track.xacro (included above) -->
 
     <xacro:imu_sensor namespace="$(arg mulinex_namespace)"/>
     <xacro:lidar_sensor tredi="$(arg lidar_3D)" namespace="$(arg mulinex_namespace)"/>
