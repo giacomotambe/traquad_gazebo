@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

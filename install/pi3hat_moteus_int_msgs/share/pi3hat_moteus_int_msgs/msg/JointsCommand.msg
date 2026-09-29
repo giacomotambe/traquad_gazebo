@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/src/Pi3Hat_Controllers/src/pi3hat_moteus_int_msgs/msg/JointsCommand.msg
