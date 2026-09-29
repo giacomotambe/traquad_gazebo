@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/build/pi3hat_moteus_int_msgs/rosidl_typesupport_fastrtps_c/pi3hat_moteus_int_msgs/msg/detail/joints_states__rosidl_typesupport_fastrtps_c.h

@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/build/omni_mulinex_joystic/ament_cmake_core/omni_mulinex_joysticConfig-version.cmake

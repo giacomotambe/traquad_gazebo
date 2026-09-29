@@ -1,0 +1,31 @@
+# colcon workspace artifacts
+build/
+install/
+log/
+
+# rosbag (ROS 2 / ROS 1), in qualsiasi cartella
+rosbag2_*/
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+*.bag
+omni_mul_experiments/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Dati numerici generati
+*.npy
+
+# Script temporanei di Claude
+.claude_*
+
+# Editor / file spazzatura
+.vscode/
+*.swp
+*~
+nano.save
+/sed

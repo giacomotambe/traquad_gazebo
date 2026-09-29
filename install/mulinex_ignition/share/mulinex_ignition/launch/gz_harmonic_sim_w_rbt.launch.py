@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/src/mulinex_ignition/launch/gz_harmonic_sim_w_rbt.launch.py

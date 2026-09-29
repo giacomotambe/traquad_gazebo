@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_wheel_velocity_command_s.c

@@ -1,1 +1,0 @@
-/home/ros/docker_simulation_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/__init__.py
