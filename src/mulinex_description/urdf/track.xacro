@@ -8,11 +8,17 @@
   <xacro:property name="wheel_izz" default="1.15625e-05"/>
   <xacro:property name="wheel_mesh" default="file://$(find mulinex_description)/meshes//wheel.stl"/>
 
-  
-  <!-- Gazebo-only wheel friction: reduced lateral friction lets the skid-steer tracks turn.
-       mu acts along fdir1 (= wheel axis, lateral), mu2 along the rolling direction. -->
-  <xacro:property name="wheel_mu_lat" value="0.1"/>
-  <xacro:property name="wheel_mu_long" value="1.0"/>
+  <!-- Wheel/roller contact. Isotropic friction (Isaac Sim default 0.5), lateral compliance
+       comes from passive rollers on the ground wheels: roller_damping tunes lateral resistance -->
+  <xacro:property name="wheel_mu" value="0.5"/>
+  <xacro:property name="roller_n" value="8"/>
+  <xacro:property name="roller_radius" value="0.008"/>
+  <xacro:property name="roller_ring_radius" value="0.007"/>
+  <xacro:property name="roller_mass" value="0.005"/>
+  <xacro:property name="roller_damping" value="1e-4"/>
+  <!-- roller rotational inertia (armature-like, larger than the physical 1.3e-7): in DART the
+       effective joint damping is capped at about inertia/timestep -->
+  <xacro:property name="roller_inertia" value="1e-5"/>
 
   <xacro:property name="body_mass" value="0.6"/>
   <!-- Passive ankle: range centred on the pose where the track lies flat
@@ -25,31 +31,90 @@
 
   <!-- ===================== MACRO ===================== -->
 
-  <!-- Macro RUOTA -->
-  <xacro:macro name="wheel" params="name parent xyz rpy">
-    <link name="${name}">
+  <xacro:macro name="contact_friction" params="link">
+    <gazebo reference="${link}">
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>${wheel_mu}</mu>
+              <mu2>${wheel_mu}</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- Passive rollers on the wheel rim (wheel link frame, axis z, mid-plane z=-0.0225),
+       each roller axis tangent to the rim -->
+  <xacro:macro name="roller_ring" params="wheel k">
+    <xacro:property name="th" value="${2*pi*k/roller_n}"/>
+    <link name="${wheel}_roller_${k}">
       <inertial>
-        <origin xyz="0 0 -0.0225" rpy="0 0 0"/>
-        <mass value="${wheel_mass}"/>
-        <inertia ixx="${wheel_ixx}" ixy="0" ixz="0"
-                 iyy="${wheel_iyy}" iyz="0" izz="${wheel_izz}"/>
+        <mass value="${roller_mass}"/>
+        <inertia ixx="${roller_inertia}" ixy="0" ixz="0" iyy="${roller_inertia}" iyz="0" izz="${roller_inertia}"/>
       </inertial>
       <visual>
-        <origin xyz="0 0 -0.045" rpy="-1.5708 -1.5708 0"/>
         <geometry>
-          <mesh filename="${wheel_mesh}"/>
+          <sphere radius="${roller_radius}"/>
         </geometry>
-        <material name="${name}_material">
-          <color rgba="0.615686 0.811765 0.929412 1"/>
+        <material name="roller_material">
+          <color rgba="0.3 0.3 0.3 1"/>
         </material>
       </visual>
       <collision>
-        <!-- primitive equivalent of wheel.stl (r=0.015, width=0.045), friction params are applied to it -->
-        <origin xyz="0 0 -0.0225" rpy="0 0 0"/>
         <geometry>
-          <cylinder radius="0.015" length="0.045"/>
+          <sphere radius="${roller_radius}"/>
         </geometry>
       </collision>
+    </link>
+    <joint name="${wheel}_roller_${k}_joint" type="continuous">
+      <origin xyz="${roller_ring_radius*cos(th)} ${roller_ring_radius*sin(th)} -0.0225" rpy="0 0 ${th + pi/2}"/>
+      <parent link="${wheel}"/>
+      <child link="${wheel}_roller_${k}"/>
+      <axis xyz="1 0 0"/>
+      <dynamics damping="${roller_damping}" friction="0.0"/>
+    </joint>
+    <xacro:contact_friction link="${wheel}_roller_${k}"/>
+    <xacro:if value="${k + 1 &lt; roller_n}">
+      <xacro:roller_ring wheel="${wheel}" k="${k + 1}"/>
+    </xacro:if>
+  </xacro:macro>
+
+  <!-- Macro RUOTA: rollers=true for ground wheels, false for the raised idler -->
+  <xacro:macro name="wheel" params="name parent xyz rpy rollers:=true">
+    <link name="${name}">
+      <xacro:if value="${rollers}">
+        <xacro:property name="hub_mass" value="${wheel_mass - roller_n*roller_mass}"/>
+      </xacro:if>
+      <xacro:unless value="${rollers}">
+        <xacro:property name="hub_mass" value="${wheel_mass}"/>
+      </xacro:unless>
+      <inertial>
+        <origin xyz="0 0 -0.0225" rpy="0 0 0"/>
+        <mass value="${hub_mass}"/>
+        <inertia ixx="${wheel_ixx*hub_mass/wheel_mass}" ixy="0" ixz="0"
+                 iyy="${wheel_iyy*hub_mass/wheel_mass}" iyz="0" izz="${wheel_izz*hub_mass/wheel_mass}"/>
+      </inertial>
+      <xacro:unless value="${rollers}">
+        <visual>
+          <origin xyz="0 0 -0.045" rpy="-1.5708 -1.5708 0"/>
+          <geometry>
+            <mesh filename="${wheel_mesh}"/>
+          </geometry>
+          <material name="${name}_material">
+            <color rgba="0.615686 0.811765 0.929412 1"/>
+          </material>
+        </visual>
+        <collision>
+          <!-- primitive equivalent of wheel.stl (r=0.015, width=0.045) -->
+          <origin xyz="0 0 -0.0225" rpy="0 0 0"/>
+          <geometry>
+            <cylinder radius="0.015" length="0.045"/>
+          </geometry>
+        </collision>
+      </xacro:unless>
     </link>
 
     <joint name="joint_${name}" type="continuous">
@@ -60,22 +125,14 @@
       <limit effort="10" velocity="100000"/>
     </joint>
 
-    <gazebo reference="${name}">
-      <collision>
-        <surface>
-          <friction>
-            <ode>
-              <mu>${wheel_mu_lat}</mu>
-              <mu2>${wheel_mu_long}</mu2>
-              <!-- wheel axis (joint axis, link z) -->
-              <fdir1>0 0 1</fdir1>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-    </gazebo>
+    <xacro:if value="${rollers}">
+      <xacro:roller_ring wheel="${name}" k="0"/>
+    </xacro:if>
+    <xacro:unless value="${rollers}">
+      <xacro:contact_friction link="${name}"/>
+    </xacro:unless>
   </xacro:macro>
-  
+
   <!-- Macro CORPO LEFT -->
   <xacro:macro name="body_left" params="name parent xyz rpy ankle_center">
     <joint name="${name}_ankle" type="revolute">
@@ -156,7 +213,7 @@
   <xacro:wheel name="wheel_1_LEFT_H" parent="body_left_H" xyz="0 0.0484063 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
   <xacro:wheel name="wheel_2_LEFT_H" parent="body_left_H" xyz="0 1.07779e-16 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
   <xacro:wheel name="wheel_3_LEFT_H" parent="body_left_H" xyz="0 -0.0510313 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
-  <xacro:wheel name="wheel_4_LEFT_H" parent="body_left_H" xyz="0 -0.0766777 -0.0417374" rpy="-6.12323e-17 -1.5708 0"/>
+  <xacro:wheel name="wheel_4_LEFT_H" parent="body_left_H" xyz="0 -0.0766777 -0.0417374" rpy="-6.12323e-17 -1.5708 0" rollers="false"/>
 
   <!-- LEFT_F -->
   <xacro:body_left name="body_left_F" parent="LF_UPPER_LEG"
@@ -164,7 +221,7 @@
   <xacro:wheel name="wheel_1_LEFT_F" parent="body_left_F" xyz="0 0.0484063 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
   <xacro:wheel name="wheel_2_LEFT_F" parent="body_left_F" xyz="0 1.07779e-16 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
   <xacro:wheel name="wheel_3_LEFT_F" parent="body_left_F" xyz="0 -0.0510313 -0.0583795" rpy="-6.12323e-17 -1.5708 0"/>
-  <xacro:wheel name="wheel_4_LEFT_F" parent="body_left_F" xyz="0 -0.0766777 -0.0417374" rpy="-6.12323e-17 -1.5708 0"/>
+  <xacro:wheel name="wheel_4_LEFT_F" parent="body_left_F" xyz="0 -0.0766777 -0.0417374" rpy="-6.12323e-17 -1.5708 0" rollers="false"/>
 
   <!-- RIGHT_F -->
   <xacro:body_right name="body_right_F" parent="RF_UPPER_LEG"
@@ -172,7 +229,7 @@
   <xacro:wheel name="wheel_1_RIGHT_F" parent="body_right_F" xyz="2.08167e-17 0.0583795 0.0484062" rpy="-1.5708 0.992087 -1.5708"/>
   <xacro:wheel name="wheel_2_RIGHT_F" parent="body_right_F" xyz="0 0.0583795 1.10544e-16" rpy="-1.5708 0.967866 -1.5708"/>
   <xacro:wheel name="wheel_3_RIGHT_F" parent="body_right_F" xyz="-2.08167e-17 0.0583795 -0.0510312" rpy="-1.5708 0.967866 -1.5708"/>
-  <xacro:wheel name="wheel_4_RIGHT_F" parent="body_right_F" xyz="-3.46945e-17 0.0417374 -0.0766777" rpy="-1.5708 0.992087 -1.5708"/>
+  <xacro:wheel name="wheel_4_RIGHT_F" parent="body_right_F" xyz="-3.46945e-17 0.0417374 -0.0766777" rpy="-1.5708 0.992087 -1.5708" rollers="false"/>
 
   <!-- RIGHT_H -->
   <xacro:body_right name="body_right_H" parent="RH_UPPER_LEG"
@@ -180,6 +237,6 @@
   <xacro:wheel name="wheel_1_RIGHT_H" parent="body_right_H" xyz="2.08167e-17 0.0583795 0.0484062" rpy="-1.5708 0.992087 -1.5708"/>
   <xacro:wheel name="wheel_2_RIGHT_H" parent="body_right_H" xyz="0 0.0583795 1.10544e-16" rpy="-1.5708 0.967866 -1.5708"/>
   <xacro:wheel name="wheel_3_RIGHT_H" parent="body_right_H" xyz="-2.08167e-17 0.0583795 -0.0510312" rpy="-1.5708 0.967866 -1.5708"/>
-  <xacro:wheel name="wheel_4_RIGHT_H" parent="body_right_H" xyz="-3.46945e-17 0.0417374 -0.0766777" rpy="-1.5708 0.992087 -1.5708"/>
+  <xacro:wheel name="wheel_4_RIGHT_H" parent="body_right_H" xyz="-3.46945e-17 0.0417374 -0.0766777" rpy="-1.5708 0.992087 -1.5708" rollers="false"/>
 
 </robot>
