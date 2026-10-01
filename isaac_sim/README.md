@@ -36,6 +36,15 @@ ffmpeg -framerate 60 -pattern_type glob -i '/tmp/frames/*.png' -c:v libx264 -pix
 | `track_test.py` | standard maneuver of the Gazebo tests, metrics + CSV |
 | `open_traquad_replica.py` | stance, drives, dt, friction and command sequence of `open_traquad.py`; prints measured vs commanded velocity per segment |
 | `video_replica.py` | same setup as the replica, renders a follow-camera video with command and measured velocity on each frame |
+| `lateral_force.py` / `lateral_batch.sh` | robot parked, constant lateral force on the base for 3 s: lateral speed and displacement (force x roller damping) |
+| `friction_batch.sh` | for each roller dry friction: lateral push matrix + rotation sequence |
+| `ramp_test.py` / `ramp_batch.sh` | robot parked across a side slope (tilted gravity), mass set with `--mass`: holds or slides (friction x slope) |
+| `ramp_video.py` | two robots on a real inclined ramp with different roller dry friction |
+
+Roller dry friction (`--roller_friction`, Nm) is set at runtime with
+`set_dof_friction_properties` (static = dynamic) on the 96 roller joints; in URDF terms it is
+`<dynamics friction="..."/>` on the roller joints. A roller turns only when the lateral contact force
+exceeds tau / r_roller, so the robot holds lateral forces up to about 12 * tau / 0.008 = 1500 * tau N.
 
 ## Pitfalls found
 

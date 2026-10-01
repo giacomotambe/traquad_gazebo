@@ -1,8 +1,10 @@
-"""Replica of open_traquad.py (Isaac Lab) with the plain Isaac Sim API: same stance, drives, dt,
-friction, track width and --demo command sequence. Prints measured vs commanded body velocities
-per command segment and the wheel speed tracking.
+"""Lateral push test in Isaac Sim (training setup of open_traquad.py, robot standing still).
 
-usage: ./isaac.sh open_traquad_replica.py --usd <robot.usda> [--roller_damping d] [--wheel_kd 0.5]
+For each force a constant lateral force (base frame, +y, at the base link origin) is applied for
+PUSH seconds, starting from the same settled state. Prints, per force: lateral displacement,
+steady lateral velocity (last second) and yaw change.
+
+usage: ./isaac.sh lateral_force.py --usd <robot.usda> [--roller_damping d] [--forces 2 5 10 20 40]
 """
 import argparse
 import math
@@ -11,10 +13,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--usd', required=True)
 parser.add_argument('--roller_friction', type=float, default=0.0,
                     help='dry (Coulomb) friction torque of the roller joints [Nm]')
-parser.add_argument('--roller_damping', type=float, default=3e-5)
-parser.add_argument('--wheel_kd', type=float, default=0.5)
-parser.add_argument('--track_width', type=float, default=0.395)
-parser.add_argument('--ground_friction', type=float, default=1.0)
+parser.add_argument('--roller_damping', type=float, default=1e-4)
+parser.add_argument('--forces', type=float, nargs='+', default=[2.0, 5.0, 10.0, 20.0, 40.0])
+parser.add_argument('--push', type=float, default=3.0, help='push duration [s]')
 args, _ = parser.parse_known_args()
 
 from isaacsim import SimulationApp  # noqa: E402
@@ -23,6 +24,7 @@ app = SimulationApp({'headless': True})
 
 import numpy as np  # noqa: E402
 import omni.usd  # noqa: E402
+import warp as wp  # noqa: E402
 import isaacsim.core.experimental.utils.app as app_utils  # noqa: E402
 import isaacsim.core.experimental.utils.stage as stage_utils  # noqa: E402
 from isaacsim.core.experimental.prims import Articulation  # noqa: E402
@@ -31,8 +33,6 @@ from pxr import Gf, PhysxSchema, UsdGeom, UsdPhysics, UsdShade  # noqa: E402
 
 SimulationManager.switch_physics_engine('physx')
 DT = 1.0 / 200.0
-R = 0.015
-DEMO = [(4.0, 0.3, 0.0), (4.0, 0.0, 0.8), (4.0, 0.3, 0.5), (4.0, -0.3, 0.0), (4.0, 0.0, -0.8), (2.0, 0.0, 0.0)]
 STANCE = {'LF_HFE': 1.47, 'LH_HFE': -1.47, 'RF_HFE': -1.47, 'RH_HFE': 1.47,
           'body_left_F_ankle': 0.10, 'body_right_F_ankle': 0.10,
           'body_left_H_ankle': -0.10, 'body_right_H_ankle': -0.10}
@@ -45,8 +45,8 @@ async def build():
     UsdGeom.SetStageMetersPerUnit(stage, 1.0)
     mat = UsdShade.Material.Define(stage, '/World/GroundMaterial')
     m = UsdPhysics.MaterialAPI.Apply(mat.GetPrim())
-    m.CreateStaticFrictionAttr().Set(args.ground_friction)
-    m.CreateDynamicFrictionAttr().Set(args.ground_friction)
+    m.CreateStaticFrictionAttr().Set(1.0)
+    m.CreateDynamicFrictionAttr().Set(1.0)
     UsdGeom.Xform.Define(stage, '/World/Ground')
     plane = UsdGeom.Plane.Define(stage, '/World/Ground/Plane')
     plane.CreateAxisAttr().Set('Z')
@@ -63,7 +63,7 @@ async def build():
     px.CreateEnabledSelfCollisionsAttr().Set(False)
     px.CreateSolverPositionIterationCountAttr().Set(16)
     px.CreateSolverVelocityIterationCountAttr().Set(4)
-    for p in stage.Traverse():   # max depenetration velocity 1.0 as in the Isaac Lab config
+    for p in stage.Traverse():
         if str(p.GetPath()).startswith('/World/robot') and p.HasAPI(UsdPhysics.RigidBodyAPI):
             PhysxSchema.PhysxRigidBodyAPI.Apply(p).CreateMaxDepenetrationVelocityAttr().Set(1.0)
     SimulationManager.setup_simulation(dt=DT, device='cpu')
@@ -80,60 +80,67 @@ N = len(names)
 idx = {n: i for i, n in enumerate(names)}
 hfe = [idx[n] for n in ('LF_HFE', 'LH_HFE', 'RF_HFE', 'RH_HFE')]
 ankles = [i for n, i in idx.items() if n.endswith('_ankle')]
-left = [i for n, i in idx.items() if n.startswith('joint_wheel_') and 'LEFT' in n]
-right = [i for n, i in idx.items() if n.startswith('joint_wheel_') and 'RIGHT' in n]
+wheels = [i for n, i in idx.items() if n.startswith('joint_wheel_')]
 rollers = [i for n, i in idx.items() if '_roller_' in n]
-
 kp = np.zeros(N, np.float32); kd = np.zeros(N, np.float32); fmax = np.full(N, 1e3, np.float32)
 kp[hfe] = 100.0; kd[hfe] = 0.4; fmax[hfe] = 5.0
 kp[ankles] = 20.0; kd[ankles] = 0.2; fmax[ankles] = 10.0
-kd[left + right] = args.wheel_kd; fmax[left + right] = 10.0
+kd[wheels] = 0.5; fmax[wheels] = 10.0          # wheels held at zero speed (velocity drive)
 kd[rollers] = args.roller_damping
 robot.set_dof_gains(stiffnesses=kp[None], dampings=kd[None])
 robot.set_dof_max_efforts(fmax[None])
-arm = np.zeros(N, np.float32); arm[left + right] = 0.001
+arm = np.zeros(N, np.float32); arm[wheels] = 0.001
 robot.set_dof_armatures(arm[None])
 q0 = np.zeros(N, np.float32)
 for n, v in STANCE.items():
     q0[idx[n]] = v
 robot.set_dof_positions(q0[None])
 robot.set_dof_position_targets(q0[None])
+robot.set_dof_velocity_targets(np.zeros((1, N), np.float32))
 if rollers and args.roller_friction > 0:   # dry friction: a roller turns only above this torque
     tau = np.full((1, len(rollers)), args.roller_friction, np.float32)
     robot.set_dof_friction_properties(static_frictions=tau, dynamic_frictions=tau, dof_indices=rollers)
-print(f'DOFs {N}: wheels {len(left)}+{len(right)} rollers {len(rollers)} | wheel Kd {args.wheel_kd} '
-      f'| B {args.track_width} | ground mu {args.ground_friction}', flush=True)
+
+view = robot._physics_articulation_view
+base = robot.link_names.index('base_link')
+n_links = len(robot.link_names)
+indices = wp.array([0], dtype=wp.int32, device='cpu')
 
 
-def body_vel():
-    _, q = robot.get_world_poses()
-    lin, ang = robot.get_velocities()
+def pose():
+    p, q = robot.get_world_poses()
     w, x, y, z = q.numpy()[0]
-    yaw = math.atan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z))
-    lin = lin.numpy()[0]
-    return (math.cos(yaw) * lin[0] + math.sin(yaw) * lin[1], float(ang.numpy()[0][2]),
-            -math.sin(yaw) * lin[0] + math.cos(yaw) * lin[1])
+    return p.numpy()[0].copy(), math.atan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z))
 
 
-SimulationManager.step(steps=int(1.0 / DT))   # settle 1 s
-print(f'{"cmd v":>6} {"cmd w":>6} | {"meas v":>7} {"meas w":>7} | {"v %":>5} {"w %":>5} | {"|vy|":>6} | wheel speed % of cmd (L / R)')
-for dur, v, w in DEMO:
-    vl, vr = v - w * args.track_width / 2, v + w * args.track_width / 2
-    tgt = np.zeros(N, np.float32)
-    tgt[left] = -vl / R
-    tgt[right] = vr / R
-    robot.set_dof_velocity_targets(tgt[None])
-    acc = []
-    for k in range(int(dur / DT)):
+SimulationManager.step(steps=int(2.0 / DT))      # settle
+p_rest, q_rest = [a.numpy().copy() for a in robot.get_world_poses()]
+dof_rest = robot.get_dof_positions().numpy().copy()
+print(f'DOFs {N} rollers {len(rollers)} damping {args.roller_damping:g} friction {args.roller_friction:g} | rest base z {p_rest[0][2]:.3f}', flush=True)
+
+for F in args.forces:
+    # restore the settled state
+    robot.set_world_poses(positions=p_rest, orientations=q_rest)
+    robot.set_velocities(linear_velocities=np.zeros((1, 3), np.float32), angular_velocities=np.zeros((1, 3), np.float32))
+    robot.set_dof_positions(dof_rest)
+    robot.set_dof_velocities(np.zeros((1, N), np.float32))
+    SimulationManager.step(steps=int(1.0 / DT))
+    p0, yaw0 = pose()
+    force = np.zeros((1, n_links, 3), np.float32)
+    force[0, base, 1] = F                         # +y in the base frame
+    f_wp = wp.array(force, dtype=wp.float32, device='cpu')
+    vy = []
+    for k in range(int(args.push / DT)):
+        view.apply_forces_and_torques_at_position(f_wp, None, None, indices, False)
         SimulationManager.step(steps=1)
-        if k * DT >= dur - 2.0:   # average over the last 2 s of the segment
-            qd = robot.get_dof_velocities().numpy()[0]
-            bv = body_vel()
-            acc.append((bv[0], bv[1], -qd[left].mean() * R, qd[right].mean() * R, abs(bv[2])))
-    a = np.array(acc).mean(axis=0)
-    pv = f'{a[0] / v * 100:5.0f}' if v else '    -'
-    pw = f'{a[1] / w * 100:5.0f}' if w else '    -'
-    wl = f'{a[2] / vl * 100:4.0f}' if abs(vl) > 1e-6 else '   -'
-    wr = f'{a[3] / vr * 100:4.0f}' if abs(vr) > 1e-6 else '   -'
-    print(f'{v:+6.2f} {w:+6.2f} | {a[0]:+7.3f} {a[1]:+7.3f} | {pv} {pw} | {a[4]:6.3f} | {wl} / {wr}', flush=True)
+        if k * DT >= args.push - 1.0:
+            lin, _ = robot.get_velocities()
+            p, yaw = pose()
+            lin = lin.numpy()[0]
+            vy.append(-math.sin(yaw) * lin[0] + math.cos(yaw) * lin[1])
+    p1, yaw1 = pose()
+    d = p1 - p0
+    lat = -math.sin(yaw0) * d[0] + math.cos(yaw0) * d[1]
+    print(f'RES d={args.roller_damping:g} tau={args.roller_friction:g} F={F:g} lateral_disp {lat:+.4f} m | vy_steady {np.mean(vy):+.4f} m/s '
+          f'| yaw {math.degrees(yaw1 - yaw0):+.2f} deg | z {p1[2]:.3f}', flush=True)
 app.close()

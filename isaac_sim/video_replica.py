@@ -12,6 +12,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--usd', required=True)
 parser.add_argument('--out', required=True)
 parser.add_argument('--roller_damping', type=float, default=1e-4)
+parser.add_argument('--roller_friction', type=float, default=0.0, help='dry friction of the roller joints [Nm]')
 parser.add_argument('--track_width', type=float, default=0.395)
 args, _ = parser.parse_known_args()
 
@@ -118,6 +119,9 @@ kp[ankles] = 20.0; kd[ankles] = 0.2; fmax[ankles] = 10.0
 kd[left + right] = 0.5; fmax[left + right] = 10.0
 kd[rollers] = args.roller_damping
 robot.set_dof_gains(stiffnesses=kp[None], dampings=kd[None])
+if rollers and args.roller_friction > 0:
+    tau = np.full((1, len(rollers)), args.roller_friction, np.float32)
+    robot.set_dof_friction_properties(static_frictions=tau, dynamic_frictions=tau, dof_indices=rollers)
 robot.set_dof_max_efforts(fmax[None])
 arm = np.zeros(N, np.float32); arm[left + right] = 0.001
 robot.set_dof_armatures(arm[None])
@@ -181,7 +185,7 @@ while True:
     img = Image.fromarray(np.asarray(data.numpy())[..., :3].astype(np.uint8))
     d = ImageDraw.Draw(img)
     d.rectangle([0, 0, 1280, 84], fill=(255, 255, 255))
-    d.text((20, 10), f'Isaac Sim (PhysX) - roller wheels, damping {args.roller_damping:g} - t = {t:5.2f} s', fill=(20, 20, 20), font=font)
+    d.text((20, 10), f'Isaac Sim (PhysX) - roller wheels, damping {args.roller_damping:g}, dry friction {args.roller_friction:g} Nm - t = {t:5.2f} s', fill=(20, 20, 20), font=font)
     d.text((20, 46), f'command  v = {v:+.2f} m/s  w = {w:+.2f} rad/s      measured  v = {vx:+.2f} m/s  w = {wz:+.2f} rad/s',
            fill=(20, 20, 20), font=font)
     img.save(os.path.join(args.out, f'{t:08.3f}.png'))
