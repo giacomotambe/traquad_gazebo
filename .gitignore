@@ -29,3 +29,6 @@ __pycache__/
 *~
 nano.save
 /sed
+
+# Isaac Sim test outputs
+isaac_sim/results/

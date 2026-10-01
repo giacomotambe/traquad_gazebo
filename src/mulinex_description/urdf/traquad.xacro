@@ -17,6 +17,17 @@
             simplify_meshes="${simplify_meshes}"/>
     </xacro:macro>
 
+    <!-- ===================== MASSES (real robot) =====================
+         body 1.7 kg including IMU (0.010 kg) and lidar (0.125 kg) links, so base_link = 1.565 kg;
+         each shoulder 0.6 kg (body + 4 shoulders = 4.1 kg), each upper leg 0.6 kg,
+         each track 0.325 kg (track_mass_scale in track.xacro); total 7.8 kg. Inertias scale with the mass. -->
+    <xacro:property name="base_mass" value="${1.7 - 0.010 - 0.125}" />
+    <xacro:property name="base_mass_scale" value="${base_mass / 1.3008737}" />
+    <xacro:property name="shoulder_mass_scale" value="${0.6 / 0.47669673}" />
+    <xacro:property name="upper_leg_mass_scale" value="${0.6 / 0.47669673}" />
+    <!-- the robot is symmetric left/right, right legs mirror the left ones, base COM on y = 0 -->
+    <xacro:property name="symmetric_left_right" value="true" />
+
     <!-- Vi consiglio di creare xacro con i track e lo includete qui -->
     <xacro:include filename="$(find mulinex_description)/urdf/links.xacro" />    
     <xacro:include filename="$(find mulinex_description)/urdf/material.xacro" />
@@ -72,11 +83,13 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="1.3008737" />
-            <origin xyz="-1.4565496e-03 -2.5110071e-03 -4.2484136e-03" rpy="0 0 0" />
-            <inertia ixx="4.0762590e-03" ixy="-2.5234809e-05" ixz="-3.2587794e-06"
-                iyy="9.2413606e-03" iyz="-8.0660183e-06"
-                izz="1.2268730e-02" />
+            <mass value="${base_mass}" />
+            <!-- left/right symmetric, COM on y = 0 and ixy = iyz = 0 -->
+            <origin xyz="-1.4565496e-03 0.0 -4.2484136e-03" rpy="0 0 0" />
+            <inertia ixx="${4.0762590e-03 * base_mass_scale}" ixy="0.0"
+                ixz="${-3.2587794e-06 * base_mass_scale}"
+                iyy="${9.2413606e-03 * base_mass_scale}" iyz="0.0"
+                izz="${1.2268730e-02 * base_mass_scale}" />
         </inertial>
     </link>
 
