@@ -28,6 +28,14 @@
 
     <xacro:property name="PI" value="3.141592" />
 
+    <!-- mass scale factors of the shoulder (hip module) and upper-leg links: 1 for Mulinex,
+         set by robots that include this file before including it (e.g. traquad.xacro) -->
+    <xacro:property name="shoulder_mass_scale" default="1.0" />
+    <xacro:property name="upper_leg_mass_scale" default="1.0" />
+    <!-- true = right shoulder/upper-leg inertials are the exact mirror (y -> -y) of the left ones
+         (COM z and ixz, iyz signs); false keeps the original values (Mulinex) -->
+    <xacro:property name="symmetric_left_right" default="false" />
+
     <!-- MULINEX VISUALIZATION meshes -->
     
     <xacro:property name="mulinex_module_left_front"
@@ -228,38 +236,38 @@
             </collision>
 
             <inertial>
-                <mass value="0.47669673" />
+                <mass value="${0.47669673 * shoulder_mass_scale}" />
                 <xacro:if value="${prefix == 'LF'}">
                     <origin
                         xyz="7.2487360e-02 3.1582591e-02 -2.4812434e-03"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="-3.3437484e-05"
-                        ixz="-2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * shoulder_mass_scale}" ixy="${-3.3437484e-05 * shoulder_mass_scale}"
+                        ixz="${-2.4284668e-06 * shoulder_mass_scale}" iyy="${3.0607390e-03 * shoulder_mass_scale}"
+                        iyz="${-2.0388977e-06 * shoulder_mass_scale}" izz="${3.0504273e-03 * shoulder_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'LH'}">
                     <origin
                         xyz="-7.2487360e-02 3.1582591e-02 2.4812434e-03"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="3.3437484e-05"
-                        ixz="-2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * shoulder_mass_scale}" ixy="${3.3437484e-05 * shoulder_mass_scale}"
+                        ixz="${-2.4284668e-06 * shoulder_mass_scale}" iyy="${3.0607390e-03 * shoulder_mass_scale}"
+                        iyz="${-2.0388977e-06 * shoulder_mass_scale}" izz="${3.0504273e-03 * shoulder_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'RF'}">
                     <origin
-                        xyz="7.2487360e-02 -3.1582591e-02 2.4812434e-03"
+                        xyz="7.2487360e-02 -3.1582591e-02 ${-2.4812434e-03 if symmetric_left_right else 2.4812434e-03}"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="3.3437484e-05"
-                        ixz="2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * shoulder_mass_scale}" ixy="${3.3437484e-05 * shoulder_mass_scale}"
+                        ixz="${(-2.4284668e-06 if symmetric_left_right else 2.4284668e-06) * shoulder_mass_scale}" iyy="${3.0607390e-03 * shoulder_mass_scale}"
+                        iyz="${(2.0388977e-06 if symmetric_left_right else -2.0388977e-06) * shoulder_mass_scale}" izz="${3.0504273e-03 * shoulder_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'RH'}">
                     <origin
-                        xyz="-7.2487360e-02 -3.1582591e-02 -2.4812434e-03"
+                        xyz="-7.2487360e-02 -3.1582591e-02 ${2.4812434e-03 if symmetric_left_right else -2.4812434e-03}"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="-3.3437484e-05"
-                        ixz="2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * shoulder_mass_scale}" ixy="${-3.3437484e-05 * shoulder_mass_scale}"
+                        ixz="${(-2.4284668e-06 if symmetric_left_right else 2.4284668e-06) * shoulder_mass_scale}" iyy="${3.0607390e-03 * shoulder_mass_scale}"
+                        iyz="${(2.0388977e-06 if symmetric_left_right else -2.0388977e-06) * shoulder_mass_scale}" izz="${3.0504273e-03 * shoulder_mass_scale}" />
                 </xacro:if>
             </inertial>
         </link>
@@ -412,38 +420,38 @@
             </collision>
 
             <inertial>
-                <mass value="0.47669673" />
+                <mass value="${0.47669673 * upper_leg_mass_scale}" />
                 <xacro:if value="${prefix == 'LF'}">
                     <origin
                         xyz="7.2487360e-02 3.1582591e-02 -2.4812434e-03"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="-3.3437484e-05"
-                        ixz="-2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * upper_leg_mass_scale}" ixy="${-3.3437484e-05 * upper_leg_mass_scale}"
+                        ixz="${-2.4284668e-06 * upper_leg_mass_scale}" iyy="${3.0607390e-03 * upper_leg_mass_scale}"
+                        iyz="${-2.0388977e-06 * upper_leg_mass_scale}" izz="${3.0504273e-03 * upper_leg_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'LH'}">
                     <origin
                         xyz="-7.2487360e-02 3.1582591e-02 2.4812434e-03"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="3.3437484e-05"
-                        ixz="-2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * upper_leg_mass_scale}" ixy="${3.3437484e-05 * upper_leg_mass_scale}"
+                        ixz="${-2.4284668e-06 * upper_leg_mass_scale}" iyy="${3.0607390e-03 * upper_leg_mass_scale}"
+                        iyz="${-2.0388977e-06 * upper_leg_mass_scale}" izz="${3.0504273e-03 * upper_leg_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'RF'}">
                     <origin
-                        xyz="7.2487360e-02 -3.1582591e-02 2.4812434e-03"
+                        xyz="7.2487360e-02 -3.1582591e-02 ${-2.4812434e-03 if symmetric_left_right else 2.4812434e-03}"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="3.3437484e-05"
-                        ixz="2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * upper_leg_mass_scale}" ixy="${3.3437484e-05 * upper_leg_mass_scale}"
+                        ixz="${(-2.4284668e-06 if symmetric_left_right else 2.4284668e-06) * upper_leg_mass_scale}" iyy="${3.0607390e-03 * upper_leg_mass_scale}"
+                        iyz="${(2.0388977e-06 if symmetric_left_right else -2.0388977e-06) * upper_leg_mass_scale}" izz="${3.0504273e-03 * upper_leg_mass_scale}" />
                 </xacro:if>
                 <xacro:if value="${prefix == 'RH'}">
                     <origin
-                        xyz="-7.2487360e-02 -3.1582591e-02 -2.4812434e-03"
+                        xyz="-7.2487360e-02 -3.1582591e-02 ${2.4812434e-03 if symmetric_left_right else -2.4812434e-03}"
                         rpy="0 0 0" />
-                    <inertia ixx="2.1574269e-04" ixy="-3.3437484e-05"
-                        ixz="2.4284668e-06" iyy="3.0607390e-03"
-                        iyz="-2.0388977e-06" izz="3.0504273e-03" />
+                    <inertia ixx="${2.1574269e-04 * upper_leg_mass_scale}" ixy="${-3.3437484e-05 * upper_leg_mass_scale}"
+                        ixz="${(-2.4284668e-06 if symmetric_left_right else 2.4284668e-06) * upper_leg_mass_scale}" iyy="${3.0607390e-03 * upper_leg_mass_scale}"
+                        iyz="${(2.0388977e-06 if symmetric_left_right else -2.0388977e-06) * upper_leg_mass_scale}" izz="${3.0504273e-03 * upper_leg_mass_scale}" />
                 </xacro:if>
             </inertial>
         </link>
