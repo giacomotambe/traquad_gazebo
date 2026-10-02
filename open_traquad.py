@@ -14,6 +14,7 @@ Usage:
 """
 
 import argparse
+import os
 
 from isaaclab.app import AppLauncher
 
@@ -57,7 +58,10 @@ from isaaclab.utils.math import quat_apply_inverse
 from pxr import PhysxSchema, UsdPhysics
 
 
-USD_PATH = "/home/francesco/Documents/isaac_model/traquad/traquad.usd"
+# instanceable asset of this repository (rebuild with isaac_sim/make_isaac_asset.sh); TRAQUAD_USD overrides it
+USD_PATH = os.environ.get(
+    "TRAQUAD_USD", os.path.join(os.path.dirname(os.path.abspath(__file__)), "isaac_sim", "assets", "traquad", "traquad.usda")
+)
 
 # Track geometry (from traquad.urdf)
 WHEEL_RADIUS = 0.015  # [m]

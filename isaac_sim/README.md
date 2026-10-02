@@ -1,5 +1,20 @@
 # Traquad track tests in Isaac Sim
 
+## Isaac asset (`assets/traquad/traquad.usda`)
+
+Instanceable USD of the current traquad model (roller wheels, real masses 7.8 kg, left/right symmetric),
+ready for Isaac Sim / Isaac Lab (`sim_utils.UsdFileCfg(usd_path=...)`; used by `../open_traquad.py`).
+
+- Built from the xacro by `./make_isaac_asset.sh [roller_damping] [roller_friction]`
+  (xacro -> URDF -> URDF importer -> `finalize_usd.py`); rebuild it whenever the xacro changes.
+- Meshes are stored once in `payloads/geometries.usd` and referenced as instances (`instanceable = true`).
+- Physics variant `physx` selected, floating base, articulation self-collisions off.
+- Default drives written in the file: HFE PD Kp 100 / Kd 10, max 5 Nm; wheels velocity drive, max 10 Nm;
+  ankles passive (damping 0.05); **rollers passive, damping 1e-4 Nm s/rad, dry friction 0.06 Nm**
+  (`physxJointAxis:angular:static/dynamicFrictionEffort`). Isaac Lab actuators override the joints they
+  match (HFE, ankles, wheels); the rollers keep the values of the file.
+- Not in the file: the contact material (friction with the ground) and the ground itself.
+
 Same maneuver and metrics as the Gazebo tests, run in Isaac Sim 6.1 (PhysX, 1 ms step, headless).
 
 ## Steps
